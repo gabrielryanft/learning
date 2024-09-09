@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento</title>
+    <style>
+        section{
+            position: relative;
+            height: 90vh;
+            padding: 20px;
+            background-color: rgba(135, 207, 235, 0.582);
+            background-image: url('imgs/target001.png');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+        article{
+            position: absolute;
+            height: 200px;
+            width: 40%;
+            background: rgba(200, 255, 49, 0.582) url('imgs/target001.png') center center no-repeat;
+            background-size: 100% 100%;
+
+            /* distancia entre a esquerda do pai e a esquerda do filho */
+            left:50%;
+            top:50%;
+            /* distancia entre o topo do pai e o topo do filho */
+
+            transform: translate(-50%, -50%)
+            /* transforma o lugar aonde sera alinhado. sem isso ele ficeria só com a ponta no cen tro. */
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+        <article>
+        </article>
+    </section>
+</body>
+</html>

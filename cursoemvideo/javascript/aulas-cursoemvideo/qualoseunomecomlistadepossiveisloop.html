@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qual é o seu nome?</title>
+</head>
+<body>
+    <script>
+        let nomesValidos = [
+          "gabriel", "gab", "gabi"
+        ];
+
+        while (true) {
+          let nomeUsuario = prompt("Olá! Qual é o seu nome?");
+
+          if (nomesValidos.includes(nomeUsuario)) {
+            alert(`Ok, olá ${nomeUsuario}!`);
+            break;
+          } else {
+            alert(`"${nomeUsuario}" não é o seu nome. Tente novamente.`);
+          }
+        }
+    </script>
+</body>
+</html>

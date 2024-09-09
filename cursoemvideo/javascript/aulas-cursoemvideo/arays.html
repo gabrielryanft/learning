@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arays</title>
+    <style>
+        li{
+            margin: 10px 
+        }
+    </style>
+</head>
+<body>
+    <h1>Arays</h1>
+    <p>Uma aray é : var num = [1, 2, 5, 76, 7, 6, 8]</p>
+    <ul id="lista">
+
+    </ul>
+    <p>Nada</p>
+    <ul id="idl">
+
+    </ul>
+    <p>Nada</p>
+    <ul id="idl2">
+
+    </ul>
+    <script>
+        var lista = document.getElementById('lista')
+        //
+        var num = [1, 2, 5, 7, 7, 6, 8, 8]////importante!
+        //
+        var nlista = document.createElement('li')
+        nlista.innerHTML = `Até agora o 'num' está assim: <strong>${num}</strong>!`
+        lista.appendChild(nlista)
+        //
+        num[8] = 3
+        var nlista1 = document.createElement('li')
+        nlista1.innerHTML = ` Eu fiz: num[8] = 3 (significa que eu quero criar o numero 3 na posição 8(ue também posso trocar valores de posições que já existem.).). Agora o 'num' está assim: <strong>${num}</strong>!`
+        lista.appendChild(nlista1)
+        //
+        num.push(6)
+        var nlista2 = document.createElement('li')
+        nlista2.innerHTML = `Eu fiz: num.push(6)(Põe o numero na ultima posição.). Agora o 'num' está assim: <strong>${num}</strong>!`
+        lista.appendChild(nlista2)
+        //
+        var nlista3 = document.createElement('li')
+        nlista3.innerHTML = 'Eu fiz: ${num.<strong>length</strong>}(dentro do bgl do innerHTML(olha o codigo))' + ` Agora o 'num' está assim: <strong>${num.length}</strong>!`
+        lista.appendChild(nlista3)
+        //
+        var nlista4 = document.createElement('li')
+        nlista4.innerHTML = 'Eu fiz: ${num.<strong>sort</strong>}(dentro do bgl do innerHTML(olha o codigo))' + ` Agora o 'num' está assim: <strong>${num.sort()}</strong>!`
+        lista.appendChild(nlista4)
+        //
+        var nlista5 = document.createElement('li')
+        nlista5.innerHTML = 'Eu fiz: ${num[0]}(dentro do bgl do innerHTML(olha o codigo))' + ` para mostrar o primenro item da aray. se eu quuisesse mostrar o segundo numero seria só por o 1 dentro das chaves([]). Resultado: <strong>${num[0]}</strong>! O primeiro item da lista é o numero 1`
+        lista.appendChild(nlista5)
+        //
+        var nlista6 = document.createElement('li')
+        nlista6.innerHTML = 'Eu fiz: ${num.<strong>[4]</strong>}(dentro do bgl do innerHTML(olha o codigo))' + ` Dá nisso: <strong>${num[4]}</strong>!`
+        lista.appendChild(nlista6)
+        //
+        for(var n = 0; n < num.length; n++){
+            //tem que por o .length para o js saber o numero de coisos do coiso!!!!!!!!!
+            var nlista7 = document.createElement('li')
+            nlista7.innerHTML = `Esse é a posição${n} : <strong>${num[n]}</strong>!`
+            idl.appendChild(nlista7)
+        }
+        //o mesmo resultado : (só que um pouco mais simples)
+        for(var n2 in num){
+            var nlista8 = document.createElement('li')
+            nlista8.innerHTML = `Esse é a posição${n2} : <strong>${num[n2]}</strong>!`
+            idl2.appendChild(nlista8)
+        }
+        //
+        var nlista9 = document.createElement('li')
+        nlista9.innerHTML = 'Eu fiz: ${num.<strong>indexOf(5)</strong>}(A posição do 5 no bgl.)' + ` Dá nisso: <strong>${num.indexOf(5)}</strong>! Ele está na posição 3(está certo)`
+        lista.appendChild(nlista9)
+
+    </script>
+</body>
+</html>

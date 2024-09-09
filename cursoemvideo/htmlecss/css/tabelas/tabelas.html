@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            width: 300px;
+            margin: auto
+        }
+        table{
+            margin: auto;
+            border:2px dashed red;
+            width: 200px;
+            border-collapse: collapse;
+            /* border-collapse: separate (normalmente está assim. collapse tira os espaços que teria entre cada item da tabela.) */
+        }
+
+        tr.marcada{
+            background-color: grey
+        }
+        td{
+            border: 1px solid black;
+            padding: 5px;
+            text-align: center;
+        }
+        .amarela{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Tabela!</h1>
+    <!-- hierarquia de tabela (smples)
+        nessa ordem e concatenação: 
+        table = tabela 
+            tabla row = linha da tabela
+                table header= cabeçalho da tabela
+                table data= dados da tabela -->
+    <table>
+        <tr class="marcada">
+            <td>
+                a1
+            </td>
+            <td>
+                b1
+            </td>
+            <td>
+                c1
+            </td>
+        </tr>
+        <tr>
+            <td>
+                a2
+            </td>
+            <td>
+                b2
+            </td>
+            <td>
+                c2
+            </td>
+        </tr>
+        <tr>
+            <td>
+                a3
+            </td>
+            <td class="amarela">
+                b3
+            </td>
+        </tr>
+        <tr>
+            <td>
+                a4
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

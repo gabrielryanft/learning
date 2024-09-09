@@ -1,0 +1,193 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #BFB68A;
+    overflow-x: hidden; /* esconde oque estiver sobrando pra fora no eixo x. */
+}
+header{
+    background-image:linear-gradient(to bottom, #8E5440, #613b2e);
+    padding: 20px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-shadow:0px 0px 10px #4e3025;
+}
+
+#h1p{
+    background-color: #8E5440;
+    box-shadow: 0px 0px 10px #704233;
+    padding: 20px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#gg{
+    background-image: linear-gradient( #8E5440, transparent);
+}
+div>h1{
+    text-align: center;
+}
+#h1p>p{
+    text-align: center;
+}
+header>nav{
+    background-color: #2E403B;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    padding-bottom: 0px;
+    min-width: 100px;
+    min-height: 180px;
+}
+nav>div{
+    flex-direction: column;
+    text-decoration: none;
+}
+#menu{
+    font-size: 1.3em;
+    background-color: #BFB68A;
+    border-radius: 10px;
+
+}
+nav>div>ul{
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+}
+ul>li{
+    margin: 2px;
+    background-color:#4F593F;
+    padding: 10px;
+    border-radius: 10px;
+    transition-property: background-color, border-radius, border;
+    transition-duration: 1s;
+}
+ul>li:hover{
+    background-color:#3f4732d3;
+    border-radius: 30px;
+    border: 1px dashed rgb(2, 17, 5);
+    padding:8px;
+}
+li>a{
+    color: black;
+    text-decoration: none;
+}
+nav>p{
+    padding: 5px;
+    text-align: center;
+}
+main{
+    background-color: #A69F7B;
+    max-width: 700px;
+    border-radius: 10px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    padding: 20px;
+    margin: auto;
+    margin-bottom: 30px
+}
+article>h2{
+    margin:10px;
+    padding: 10px;
+    background-color: #4F593F;
+    border-radius: 10px;
+}
+article>div>h3{
+    margin:10px;
+    padding: 10px;
+    background-color: #4F593F;
+    border-radius: 10px;
+}
+.espaso{
+    margin-top: 40px
+}
+article> p{
+    margin:20px;
+    text-indent: 2em;
+}
+div>h3{
+    margin:20px;
+    padding: 10px;
+}
+article>div> p{
+    margin:20px;
+    text-indent: 2em;
+}
+img{
+    width: 100%;
+    border: 5px solid #2E403B
+}
+aside h2{
+    background-color: #2E403B;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+aside ul{
+    background-color: #4F593F;
+    padding: 20px;
+    columns: 2;
+    text-align: center;
+    list-style-position: inside; /* faz a bolinha da lista ficar dentro/ colada */
+    list-style-type: '\1F60E\00a0\00a0\-\00a0\00a0';
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius:20px ;
+   
+}
+aside li{
+    padding: 10px;
+}
+abbr{
+   text-decoration: none;  /* tira qualquer edição do texto. */
+}
+#vi{
+    background-color: #2E403B;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px black;
+    margin-left: -30px;
+    margin-right: -30px;
+    margin-top: 30px;
+    margin-bottom: 30px ;
+
+    position: relative;
+    padding-bottom: 58.3%;
+}
+#vi iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    height: 90%;
+    width: 90%;
+}
+footer{
+    background-color: #8E5440;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+footer h1{
+    background-color: #4F593F;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    padding: 10px;
+    font-family: foldit, Arial, Helvetica, sans-serif;
+    text-shadow: 0px 0px 20px#24291d;
+    text-align: center;
+}
+footer>p{
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    color:rgb(2, 17, 5);
+    font-size: 20px;
+    font-family: serif;
+
+}

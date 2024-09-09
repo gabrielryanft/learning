@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios 2</title>
+</head>
+<body>
+    <h1>Senha e nome</h1>
+    <form action="acao.php" method="post" autocomplete="on">
+        <p><label for="iusu">Usuario</label> 
+            <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" size="10" placeholder="Seu nome" autocomplete="username"></p>
+
+        <p><label for="isen">Senha</label> 
+            <input type="password" name="sen" id="isen" required minlength="8" maxlength="20" placeholder="Sua senha" size="10" autocomplete="current-password"></p>
+
+        <p><input type="submit" value="Enviar"> <input type="reset" value="Resetar"></p>
+    </form>
+</body>
+</html>

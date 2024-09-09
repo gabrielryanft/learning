@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes externas</title>
+    <style>
+        @font-face {
+            font-family: Disney;
+            src: url(disney_family_1/Disney.ttf) format('truetype');
+        }
+        @font-face {
+            font-family: 'Love';
+            src: url(love_larry/love.ttf) format('opentype'), url(love_larry/love.ttf) format('truetype');/*da para por duas formats em uma linha, como eu fiz aqui em cim(pondo uma virgula entre as fontes!!!) .*/
+            /*
+tipos de format:
+    -opentype(otf)
+    -truetype(ttf)
+    -embedded-opentype
+    -truetype-aat (aat significa: apple advanced typography)
+    -svg
+            */
+            font-weight:normal;
+            font-style:normal;
+        }
+        h1{
+            font-family:'Love';
+        }
+        h2{
+            font-family:'Disney';
+            font-size:5em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Fontes externas</h1>
+    <h2>sim isso e uma fonte?</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi dolorum fugiat velit laboriosam corporis soluta et ad! Nostrum, saepe omnis id magni culpa cupiditate, similique nemo, reprehenderit fugiat pariatur optio?</p>
+</body>
+</html>

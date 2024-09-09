@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon-16x16.png" type="image/x-icon">
+    <title>Gradiantes - css</title>
+    <style>
+        *{/*se eu não fizer essas configurações globais da css,(quando tu coloca *{}) quando tu colocar o gradiente de baixo para cima (to top) ele ficara bugado: */
+           height: 100%;/*significa que ele vai ocupar 100% da tela. experimenta fazer sem essa parte. ele fica todo "zebrado"*/
+        }
+
+        body{
+            background-image: radial-gradient(circle, #232625, #35403A, #4C594F, #A4A69C, #BFBFB8);
+        }/*tipor e linear gradient: closest-side; circle at 100%(qualquer porcentagem; ellipse at top(bottom, left, right.)*/
+
+        h1{
+            color: #BFBFB8;
+        }
+
+       
+
+    </style>
+</head>
+<body>
+        <h1>Gradientes em css!!!</h1>
+</body>
+</html>

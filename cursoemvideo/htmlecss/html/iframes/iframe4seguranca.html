@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IFrames</title>
+</head>
+<body>
+    <h1>Segurança nos iframes externos</h1>
+    <h2>ex</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At eveniet qui inventore fugit ducimus sapiente saepe perferendis qui inventore fugit ducimus sapiente saepe perferendis pariatur optio dignissimos, nemo illo facere beatae impedit, praesentium nam, reprehenderit noLorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus eius nam ipsum. Nam, harum. Praesentium vel error cum incidunt fugit asperiores iste blanditiis architecto possimus? Ratione nemo explicabo dolor possimus!lorem </p>
+
+    <iframe src="pasta/cadastreseexemplo.html" frameborder="0" sandbox="allow-same-origin allow-forms allow-scripts" referrerpolicy="no-referrer-when-downgrade">
+        seu navegador não supora essa tecnologia.
+    </iframe>
+    <!--  sandbox= para bloquear todas as ações (inclusive as maliciosas(e as não maliciosas também.).) de um site, use sandbox="sandbox"  ele BLOQUEIA TODOO ACESSO que o site que esteja dentro do iframe queira fazer.-->
+
+    <!-- referrerpolicy= politica de referencia. valor padrão: referrerpolicy="no-referrer-when-downgrade". para tornar oque é carregado dentro do iframe mais limitado ainda: referrerpolicy="no-referrer" faz com que oque está carregado dentro do iframe não colete nemuma informaçao do usuario!-->
+
+    <!-- a dupla : sandbox="sandbox" referrerpolicy="no-referrer" : "liga" o maximo de segurança dentro do teu iframe -->
+    <!--  configurações da sandbox: allow-same-origin: permite o funcionamento de coisas que vem da mesma origem (mesmo servidor (eu acho(pesquisa aí eu do futuro.).).). allow-forms: permite formularios. allow-scripts: permite scripts(sj, euacho pesquisa aí eu do futuro)-->
+    <p> pariatur optio dignissimos, nemo illo facere beatae impedit, praesentium nam, reprehenderit noLorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus eius nam ipsum. Nam, harum. Praesentium vel error cum incidunt fugit asperiores iste blanditiis architecto possimus? Ratione nemo explicabo dolor possimus!loremLorem ipsum dolor sit, amet consectetur adipisicing elit. At eve</p>
+
+    <iframe src="pasta/script.html" frameborder="0" referrerpolicy="no-referrer" sandbox="allow-scripts"></iframe>
+</body>
+</html>

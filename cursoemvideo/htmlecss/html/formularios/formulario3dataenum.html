@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario3</title>
+</head>
+<body onload="carrege()">
+    <h1>Form 3</h1>
+    <form action="acao.php" method="get">
+        <p>
+            <label for="inome">Nome:</label>
+            <input type="text" name="nome" id="inome" required size="10" maxlength="20" placeholder="Seu nome" autocomplete="name">
+            <!-- minlengt e maxlength é para palavras, o tamanho delas. -->
+            <!-- placeholder é para deixar aquela mensage no fundo do input. -->
+            <!-- required significa que é um input obrigTORIO.  -->
+            <!-- size é o tamanho do input. (em letras) -->
+            <!-- autocomplete é uma expecificação doque é para o input autocomplear. -->
+        </p>
+        <p>
+            <label for="imed">Média</label>
+            <input type="number" name="med" id="imed" min="0" max="10" placeholder="0 a 10" step="0.5">
+            <!-- min e max é para numeros. -->
+            <!-- step: passos o quanto o input vai aceiter, eu boptei 0.5 ent~eo ele vai acceitar o bgl de 0.5 em 0.5. ex: 5.2 ele não aceita, só 5 ou 5.5. -->
+        </p>
+        <p>
+            <label for="imes">Mes que a nota foi tirada: </label>
+            <input type="month" name="mes1" id="imes" >
+        </p>
+        <p>
+            <label for="idia">Dia da prova:</label>
+            <input type="date" name="dia" id="idia">
+        </p>
+        <p>
+            <label for="ihora">Hora da prova: </label>
+            <input type="time" name="hura" id="ihora">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    <script>
+        function carrege(){
+            var imes = document.getElementById('imes')
+            var idia = document.getElementById('idia')
+            var ihora = document.getElementById('ihora')
+            var data = new Date()
+            var mes = data.getMonth() + 1
+            var ano = data.getFullYear()
+            var dia = data.getDate()
+            var hora = data.getHours()
+            var min = data.getMinutes()
+            console.log(dia)
+            if(mes < 10){
+                mes = "0" + mes
+            }
+            if(dia < 10){
+                dia = "0" + dia
+            }
+            if( hora < 10){
+                hora = "0" + hora
+            }
+            if(min < 10){
+                min = "0" + min
+            }
+            imes.value = `${ano}-${mes}`
+            idia.value = `${ano}-${mes}-${dia}`
+            ihora.value = `${hora}:${min}`
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        table{
+            color: white;
+        }
+        caption{
+            color: black;
+        }
+        h1{
+            font-variant: small-caps;
+        }
+        th, td{
+            border: 1px solid black;
+        }
+        th{
+            font-variant: small-caps;
+        }
+        #blue{
+            background-color: #162843;
+        }
+        .brown{
+            background-color: #3A2120;
+        }
+    </style>
+</head>
+<body>
+    <h1>Colunas nas Tabelas.</h1>
+    <table>
+        <colgroup>
+        <!-- o colgroup serve para selecionarmos uma COLUNA expecifica. -->
+        <!-- crie esses col's aí e ponha um id ou uma class neles -->
+            <col id="blue">
+            <col class="brown" span="2">
+            <!-- span="2" faz com que a coluna que está lá e a proxima culuna terão aquela alteração. o numero pode ser maior que dois. -->
+        </colgroup>
+        <caption>
+            Colunas em Tabelas
+        </caption>
+        <thead>
+            <tr>
+                <th>Gariel Totosão</th>
+                <th>Por Que?</th>
+                <th>As pessoas acreditam?</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Sim.</td>
+                <td>Porque sim.</td>
+                <td>Não!</td>
+            </tr>
+            <tr>
+                <td>Não.</td>
+                <td>Porque não.</td>
+                <td>Sim!</td>
+            </tr>
+            <tr>
+                <td>Ele é triste?</td>
+                <td>Não.</td>
+                <td>Não sei oque se passa na cabaça dos outros!</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

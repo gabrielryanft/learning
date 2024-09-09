@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maiusculas e Minusculas</title>
+    <style>
+        body{
+            height: 95vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden
+        }
+        main{
+            /* nadaa... */
+        }
+        h1{
+            text-align:center;
+            font-variant: small-caps
+        }
+        p{
+            max-width: 400px;
+            text-indent: 40px;
+            font-family:Arial, Helvetica, sans-serif;
+            margin: auto
+        }
+        span{
+            font-weight: bold
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1 id="h1"></h1>
+        <p id="p"></p>
+    </main>
+    <script>
+        var nome = prompt('Qual é o seu nome?')
+        alert(`Seu mome em letra capital é ${nome.toUpperCase()}.`)
+        alert(`Seu nome em minusculas é ${nome.toLowerCase()}`)
+        alert(`Para terminar, o seu nome tem ${nome.length} letras.(Contando com os espaços)`)
+
+        document.getElementById("h1").innerHTML = `Olá, <span>${nome}</span>!`
+        document.getElementById("p").innerHTML = `Seu nome em letra capital é "<span>${nome.toUpperCase()}</span>", e em letras minusculas é "<span>${nome.toLowerCase()}</span>" e para terminar, seu nome tem "<span>${nome.length}</span>" letras.`
+    </script>
+</body>
+</html>

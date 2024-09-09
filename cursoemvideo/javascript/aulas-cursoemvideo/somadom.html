@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soma DOM</title>
+</head>
+<body>
+    <h1 id="h1">Soma:</h1>
+    <input type="number" id="n1">
+    <input type="number" id="n2">
+    <input type="button" value="Somar!" id="butt">
+    <script>
+        butt.addEventListener('click', clique)
+
+        function clique(){
+            var inputn1 = document.getElementById("n1")
+            var inputn2 = document.getElementById("n2")
+            var butt = document.getElementById("butt")
+            var h1 = document.querySelector("h1#h1")
+
+            var n1 = Number(inputn1.value)
+            var n2 = Number(inputn2.value)
+            // .value no final porque nós queremos o !!VALOR!! do input n° 1 e 2.
+            var som = n1 + n2
+
+            h1.innerHTML = `${h1.innerHTML} a soma dos dois números é: <strong>${som}</strong>`
+        }
+
+    </script>
+</body>
+</html>

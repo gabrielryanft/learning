@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding:0px
+}
+
+html, body{
+    min-height: 100vh;
+    background-color:#A69576
+}
+
+header, footer{
+    background-color:#3A2120;
+    color: white;
+    text-align:center
+}
+
+header h1{
+    padding-top: 30px;
+    font-variant: small-caps
+    /*deixa a letra maiuscula com uma letra ainda mais maiuscula no começo.*/
+    /* existe o bgl: text-transform: uppercase; (deixa a letra em maiuscula) */
+
+    
+    
+}
+
+header p, footer p{
+    padding-bottom: 30px
+}
+
+a{
+    text-decoration: none;
+    font-weight: bolder;
+    color: rgba(255, 255, 255, 0.884)
+}
+
+a:hover{
+    text-decoration: underline
+}
+
+section{
+    padding: 3.5vw;
+    line-height: 1.5em;
+    font-family: 'Sriracha', cursive, Arial, Helvetica, sans-serif;
+    background-attachment: fixed
+}
+section p{
+    padding: 3.5vw
+}
+
+.imagem{
+    background-color: rgb(88, 88, 88);
+    padding: 5vw 3.5vw 5vw 3.5vw;
+    box-shadow:inset 0px 0px 1vw rgba(0, 0, 0, 0.5)
+}
+
+.imagem p{
+    display: inline-block
+}
+
+.normal{
+    background-color: #c2b294;
+}
+#n1{
+    box-shadow: inset 0px 5px 10px rgba(0, 0, 0, 0.5)
+}
+#img1{
+    background-image:url('../imagens/background001.jpg');
+    background-color: rgba(f, f, f, 0.5);
+    background-position: right center;
+    background-size: cover
+}
+#img1 p{
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px dashed white;
+    border-radius: 10px;
+    color:black
+}
+#img2{
+    background-image:url('../imagens/background002.jpg');
+    background-color: rgba(0, 0, 0, 0.5);
+    background-position: right center;
+    background-size: cover
+}
+#img2 p{
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px dashed black;
+    border-radius: 10px;
+    color: white
+}
+
+footer p{
+    padding-top: 30px
+}

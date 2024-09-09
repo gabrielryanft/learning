@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções</title>
+</head>
+<body>
+    <h1>Funções</h1>
+    <ul id="lista">
+
+    </ul>
+    <p>Nada</p>
+    <ul id="lista1">
+
+    </ul>
+    <p>Nada</p>
+    <ul id="lista2">
+
+    </ul>
+    <p>Nada</p>
+    <ul id="lista3">
+
+    </ul>
+    <p>Nada</p>
+    <ul id="lista4">
+
+    </ul>
+    <script>
+        // um valor
+
+        var lista = document.getElementById('lista')
+        var numn = prompt("Escolha um número. Eu direi se ele é par ou impar.")
+        var num = Number(numn)
+
+        function parouimp(n){
+            if(n % 2 == 0){
+                return 'par!'
+            } else{
+                return 'impar!'
+            }
+        }
+        var res = parouimp(num)
+        var nlista = document.createElement('li')
+        nlista.innerHTML = `O número <strong>${num}</strong> é <strong>${res}</strong>`
+        lista.appendChild(nlista)
+
+        // dois valores
+
+        var lista1 = document.getElementById('lista1')
+        var numn2 = prompt("Escolha um número. Eu somarei com o proximo numero que você escolher.")
+        var numn1 = prompt("Escolha um número. Eu somarei com o número anterior que você escolheu.")
+        var num2 = Number(numn2)
+        var num1 = Number(numn1)
+
+        function soma(n1=0, n2=0){
+            //Tive que igualar a zero ali em cima para quando a pessoa não der algum dos numeros não de NaN. Agora  que os dois estão pré igualados a zero ne um não for dado a soma continua normal. S se a pessoa der algum valor para algum deles eles deixarão de ser zeros(Serão o número que a pessoa der para ele.). 
+            return n1 + n2
+        }
+        var res2 = soma(num2, num1)
+        var nlista2 = document.createElement('li')
+        nlista2.innerHTML = `A soma do número <strong>${num2}</strong> com o número <strong>${num1}</strong> é <strong>${res2}</strong>`
+        lista1.appendChild(nlista2)
+
+        // função dentro de variavel
+
+        var lista2 = document.getElementById('lista2')
+        var numn3 = prompt("Escolha um número. Eu irei multiplicar ele por dois.")
+        var num3 = Number(numn3)
+
+        function mult(n){
+            return n*2
+        }
+        var res3 = mult(num3)
+        var nlista3 = document.createElement('li')
+        nlista3.innerHTML = `O número <strong>${num3}</strong> vazes dois é <strong>${res3}</strong>`
+        lista2.appendChild(nlista3)
+
+        //fatorial
+
+        var lista3 = document.getElementById('lista3')
+        var numn4 = prompt("Escolha um número. Eu irei fazer ele em fatorial.")
+        var num4 = Number(numn4)
+
+        function fatorial(n){
+            var fat = 1
+            for(var c = n; c > 1; c--){
+                fat *= c
+            }
+            return fat
+        }
+        var res4 = fatorial(num4)
+        var nlista4 = document.createElement('li')
+        nlista4.innerHTML = `O número <strong>${num4}</strong> em fatorial é <strong>${res4}</strong>`
+        lista3.appendChild(nlista4)
+
+        // fatoriial 2° manaira
+
+        var lista4 = document.getElementById('lista4')
+        var numn5 = prompt("Escolha um número. Eu irei fazer ele em fatorial.")
+        var num5 = Number(numn5)
+
+        function fatorial2(n){
+            if (n == 1){
+                return 1
+            } else {
+                return n * fatorial2(n-1)
+            }
+        }
+        var res5 = fatorial(num5)
+        var nlista5 = document.createElement('li')
+        nlista5.innerHTML = `O número <strong>${num5}</strong> em fatorial é <strong>${res5}</strong>`
+        lista4.appendChild(nlista5)
+    </script>
+</body>
+</html>

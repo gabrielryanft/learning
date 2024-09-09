@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores logicos</title>
+    <style>
+        h1{
+            font-variant: small-caps
+        }
+        th, td{
+            padding: 5px ;
+            border: 1px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Operadores logicos</h1>
+    <ul>
+        <li>! Negação</li> 
+        <li>&& E</li> 
+        <li>|| OU</li>
+    </ul>
+    <table>
+        <thead>
+            <tr>
+                <th>Valor</th>
+                <th>Operador<br>Lógico</th>
+                <th>Valor</th>
+                <th> = </th>
+                <th>Resposta</th>
+                <th>Explicação</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2"> Ñ tem. </td>
+                <td rowspan="2"> ! </td>
+                <td>True</td>
+                <td>=</td>
+                <td>False</td>
+                <td rowspan="2">Se <strong>Não For</strong> Falso, é Verdadeiro e viceversa.</td>
+            </tr>
+            <tr>
+                <!-- <td rowspan="2"> Ñ tem. </td>
+                <td rowspan="2"> ! </td> -->
+                <td>False</td>
+                <td>=</td>
+                <td>True</td>
+            </tr>
+            <tr>
+                <td> True </td>
+                <td rowspan="4"> && </td>
+                <td>True</td>
+                <td>=</td>
+                <td>True</td>
+                <td rowspan="4">O primeiro <strong>E</strong> o segundo tem que ser Verdadeiro.</td>
+            </tr>
+            <tr>
+                <td> True </td>
+                <!-- <td rowspan="4"> && </td> -->
+                <td>False</td>
+                <td>=</td>
+                <td>false</td>
+            </tr>
+            <tr>
+                <td> False </td>
+                <!-- <td rowspan="4"> && </td> -->
+                <td>False</td>
+                <td>=</td>
+                <td>false</td>
+            </tr>
+            <tr>
+                <td> False </td>
+                <!-- <td rowspan="4"> && </td> -->
+                <td>True</td>
+                <td>=</td>
+                <td>false</td>
+            </tr>
+            <tr>
+                <td> False </td>
+                <td rowspan="4"> || </td>
+                <td>False</td>
+                <td>=</td>
+                <td>false</td>
+                <td rowspan="4">O primeiro <strong>OU</strong> o segundo tem que ser verdade.</td>
+            </tr>
+            <tr>
+                <td> False </td>
+                <!-- <td rowspan="4"> && </td> -->
+                <td>True</td>
+                <td>=</td>
+                <td>True</td>
+            </tr>
+            <tr>
+                <td> True </td>
+                <!-- <td rowspan="4"> && </td> -->
+                <td>True</td>
+                <td>=</td>
+                <td>True</td>
+            </tr>
+            <tr>
+                <td> True </td>
+                <!-- <td rowspan="4"> && </td> -->
+                <td>False</td>
+                <td>=</td>
+                <td>True</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

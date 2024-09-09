@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Formularios: número de telefone e email</h1>
+    <form action="acao.php" autocomplete="on" method="get">
+        <fieldset>
+            <legend>dados</legend>
+            <p>
+                <label for="iemail">E- mail</label>
+                <input type="email" name="email" id="iemail" autocomplete="email" required>
+                <!-- o input emeil, força o uso de um arroba.  -->
+            </p>
+            <p>
+                <label for="itel">Telefone</label>
+                <input type="tel" name="tel" id="itel" autocomplete="tel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" placeholder="(xx)xxxxx-xxxx">
+                <!-- o input tel não faz nada. o pattern permite que ele force o numero a ser diferente. -->
+            </p>
+            <!-- estudar sobre regex. html5 telefone patern-->
+            <p>
+            
+        </fieldset>    <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

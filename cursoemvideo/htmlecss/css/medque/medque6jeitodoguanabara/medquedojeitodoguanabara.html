@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query - Página de login</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/others.css">
+</head>
+<body>
+    <main>
+        <section>
+             <div id="img">
+
+            </div>
+            <div id="login">
+                <h1 id="ph1">
+                    Login
+                </h1>
+                <p id="pp">
+                    Faça login para não acessar as suas informações! (Eu ainda não sei php.)
+                </p>
+                <form action="login.php" method="post" autocomplete="on">
+                    <div class="campo">
+                        <span class="material-symbols-outlined">
+                            mail
+                        </span>
+                        <input type="email" name="email" id="iemail" size="15" required maxlength="100" placeholder="Email" autocomplete="email">
+                    </div>
+                
+                    <br>
+
+                    <div class="campo">
+                        <span class="material-symbols-outlined">
+                            key
+                        </span>
+                        <input type="password" name="pass" id="ipass" size="15" required minlength="8" maxlength="40" placeholder="Senha" autocomplete="new-password">
+                    </div>
+                    
+                    <br>
+                    <input type="submit" value='"Entrar"'>
+                    <br>
+                    <a href="senhaesquecida.html" id="eas" target="_self" rel="next"> Esqueci a senha!</a>
+    
+                </form>
+            </div>
+        </section>
+    </main>
+    
+</body>
+</html>

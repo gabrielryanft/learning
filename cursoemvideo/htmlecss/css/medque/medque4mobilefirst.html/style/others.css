@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+@media print{
+    body{
+        background-image: none
+    }
+    h1{
+        font-family: 'Courier New', Courier, monospace
+    }
+    p{
+        color: black;
+        text-shadow: none; 
+    }
+    
+    #phone{display: none}
+    #tablet{display: none}
+    #pc{display: none}
+    #tv{display: none}
+    #print{display: block}
+}
+
+@media screen and (max-width: 768px){
+   /* fizemos o esquema do mobile first então esse n~precisa muder nada */
+   #all{
+    padding: 0px
+   }
+}
+
+@media screen and (min-width: 768px ) and (max-width: 992px){
+    body{
+        background-image: url(../imgs/back-tablet.jpg)
+    }
+    #all{
+        background-color: rgba(194, 194, 194, 0.637)
+    }
+    
+    #phone{display: none}
+    #tablet{display: block}
+    #pc{display: none}
+    #tv{display: none}
+    #print{display: none}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px){
+    body{
+        background-image: url(../imgs/back-pc.jpg);
+    }
+    #all{
+        background-color: rgba(128, 0, 128, 0.384)
+    }
+    
+    #phone{display: none}
+    #tablet{display: none}
+    #pc{display: block}
+    #tv{display: none}
+    #print{display: none}
+}
+
+@media screen and (min-width: 1200px){
+    body{
+        background-image: url(../imgs/back-tv.jpg)
+    }
+    #all{
+        background-color: rgba(194, 194, 194, 0.637)
+    }
+    
+    #phone{display: none}
+    #tablet{display: none}
+    #pc{display: none}
+    #tv{display: block}
+    #print{display: none}
+}

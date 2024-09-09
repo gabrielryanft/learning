@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dias Switch</title>
+</head>
+<body>
+    <h1>Dia da semana.</h1>
+    <p id="ds"></p>
+    <script>
+        var ds = document.getElementById('ds')
+        var data = new Date()
+        var hoje = data.getDay()
+         switch(hoje){
+            case 0: 
+                ds.innerHTML = `Hoje é domingo!`
+                break
+            
+            case 1:
+                ds.innerHTML = `Hoje é segunda.`
+                break
+
+            case 2:
+                ds.innerHTML = `Hoje é terça.`
+                break
+
+            case 3:
+                ds.innerHTML = `Hoje é quarta.`
+                break
+
+            case 4: 
+                ds.innerHTML = `Hoje é quinta.`
+                break
+
+            case 5:
+                ds.innerHTML = `Hoje é sexta!`
+                break
+
+            case 6: 
+                ds.innerHTML = `Hoje é sabado!`
+                break
+            
+            default:
+            ds.innerHTML = `[Error] Pelo viso hoje não existe. [Error]`
+            // break é oque vai acontece na nem uma das alternativas existentes existir(??)
+             // na ultima linha não precisa de break
+         }
+
+    </script>
+</body>
+</html>

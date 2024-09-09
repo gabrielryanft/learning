@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simples</title>
+    <style>
+        /*  (Atualização em CSS e os 2°'s "<hr>" e "<p></p>" foram feitos: 10/06/23) */
+        .fnapuor:hover::after{
+            content:  "(Atualização feita: 10/06/23)";
+            color: rgba(0, 0, 0, 0.5)
+        }
+        #hr::before{
+            content: "(Atualização feita: 10/06/23)";
+            color: transparent
+        }
+        #hr:hover::before{
+            color: rgba(0, 0, 0, 0.5)
+        }
+        #hr1::before{
+            content: "(Atualização(Mudança na mudança da '<hr>'(Está mais grossa)) feita: 10/06/23)";
+            color: transparent
+        }
+        #hr1:hover::before{
+            color: rgba(0, 0, 0, 0.5)
+        }
+        #somples:hover::after{
+            content: "(Eu mudei o título também, Estava escrito 'somples'.";
+            color: rgba(0, 0, 0, 0.5);
+            font-size: 0.5em;
+            font-weight: 100
+        }
+        #pear:hover::after{
+            content: "(Foda-se! Vai ficar 'pear' mesmo.)";
+            color:rgba(0, 0, 0, 0.5)
+        }
+        #bssppoj:hover::after{
+            content: "(Vou ter que mudar essa merda mesmo?)";
+            color:rgba(0, 0, 0, 0.5)
+        }
+    </style>
+</head>
+<body>
+    <h1 id="somples">Simples</h1>
+    <hr id="hr1">
+    <p id="bssppoj">bagulhinho simples, só pra <span id="pear">pear</span> o jeito.</p>
+    <hr id="hr">
+    <p class="fnapuor">Fuçando no arquivo p/ usar o repositorio. (Atualização feita: 10/06/23)</p>
+</body>
+</html>

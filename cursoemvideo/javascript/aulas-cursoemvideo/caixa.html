@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixa</title>
+    <style>
+        body{
+            display: flex;
+            height: 100vh;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            transition: border 200ms linear, scale 200ms linear, border-radius 200ms linear, background-color 200ms linear;
+        }
+        div{
+            font: small-caps 30px serif;
+            height: 200px;
+            width: 200px;
+            background-color: rgb(39, 39, 134);
+            line-height: 200px;
+            color: white;
+            text-align: center;
+            border: 1px solid black;
+            transition: border 500ms linear, scale 500ms linear, border-radius 500ms linear, background-color 500ms linear;
+        }
+    </style>
+</head>
+<body>
+    <div id="d"> 
+        Caixa
+    </div>
+    <script>
+        var d = document.getElementById("d")
+        d.addEventListener('click', clique)
+        d.addEventListener('mouseenter', entrou)
+        d.addEventListener('mouseout', sair)
+
+        function entrou(){
+            d.innerText = 'Entrou'
+            d.style.scale = 1.5
+            d.style.border = '3px dashed black'
+            d.style.borderRadius = '20px'
+        }
+
+        function clique(){
+            d.innerText = 'Clicou'
+            document.body.style.background = 'black'
+            d.style.background = 'rgba(09, 99, 029, 0.5)'
+            d.style.border = '3px dashed white'
+            d.style.scale = 2
+        }
+
+        function sair(){
+            d.innerText = 'Saiu'
+            d.style.scale = 1
+            d.style.border = 'none'
+            d.style.borderRadius = '0px'
+            document.body.style.background = 'white'
+            d.style.background = 'rgb(39, 39, 134)'
+        }
+    </script>
+</body>
+</html>

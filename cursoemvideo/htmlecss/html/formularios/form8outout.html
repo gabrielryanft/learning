@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Formularios</h1>
+    <form action="acao.php">
+        <fieldset>
+            <legend>soma</legend>
+            <p>
+                <label for="inim"> número</label>
+                <input type="number" id="inim" oninput="isom.innerHTML = Number(inim.value)
+                + Number(i2nim.value)">
+                <!-- onlinput = quandoo input for usado/preenchicdo -->
+            </p>
+            
+            <p>
+                <label for="i2nim"> número(outro)</label>
+                <input type="number" id="i2nim" oninput="isom.innerHTML = Number(inim.value)
+                + Number(i2nim.value)">
+                <!-- onlinput = quandoo input for usado/preenchicdo -->
+            </p>
+            <p>
+                <label for="isom">soma:</label>
+                <output id="isom">0</output>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>barra</legend>
+            <p>
+                <label for="ibar"> número(outro)</label>
+                <input type="range" id="ibar" oninput="ires.innerHTML = Number(ibar.value)">
+                <!-- onlinput = quandoo input for usado/preenchicdo -->
+            </p>
+            <p>
+                <label for="ires">nível:  </label>
+                <output id="ires">0</output>
+            </p>
+        </fieldset>
+        <p>
+            <input type="reset" value="Reset">
+            <input type="submit" value="Submit">
+        </p>
+    </form>
+</body>
+</html>

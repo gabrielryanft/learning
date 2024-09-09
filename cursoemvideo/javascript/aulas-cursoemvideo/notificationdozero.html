@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Alerta Personalizado</title>
+  <style>
+    /* Estilos personalizados para a caixa de diálogo modal */
+    .modal {
+      display: none; /* Inicia oculta */
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .modal-content {
+      background-color: #fefefe;
+      margin: 15% auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 300px;
+    }
+
+    .modal-buttons {
+      text-align: right;
+    }
+
+    .modal-buttons button {
+      margin-left: 5px;
+    }
+  </style>
+</head>
+<body>
+
+<button onclick="exibirAlerta()">Mostrar Alerta</button>
+
+<div id="custom-modal" class="modal">
+  <div class="modal-content">
+    <h3>Selecione uma opção</h3>
+    <div class="modal-buttons">
+      <button onclick="selecionarOpcao1()">Opção 1</button>
+      <button onclick="selecionarOpcao2()">Opção 2</button>
+    </div>
+  </div>
+</div>
+
+<script>
+function exibirAlerta() {
+  var modal = document.getElementById("custom-modal");
+  modal.style.display = "block";
+}
+
+function selecionarOpcao1() {
+  var modal = document.getElementById("custom-modal");
+  modal.style.display = "none";
+  alert("Opção 1 selecionada!");
+}
+
+function selecionarOpcao2() {
+  var modal = document.getElementById("custom-modal");
+  modal.style.display = "none";
+  alert("Opção 2 selecionada!");
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+body{
+    background-color: dodgerblue
+}
+main::after{
+    content: 'Deitado';
+    font-weight: bolder;
+    font-size: 100px;
+    font-family: 'Courier New', Courier, monospace;
+}

@@ -1,0 +1,6 @@
+e = ('Magnus Carlsen', 'Ian Nepomniachtchi', 'Ding Liren', 'Alireza Firouzja', 'Hikaru Nakamura', 'Anish Giri', 'Fabiano Caruana', 'Wesley So', 'Viswanathan Anand', 'Teimour Radjabov')
+print(f' - Lista top 10 jogadores de xadrez (Baseada em rating; Em 2023.): {e}.')
+print(f' - O top 3: {e[:3]}.')
+print(f' - Os últimos 3 do top 10: {e[-3:]}.')
+print(f' - Jogadores em ordem alfabetica: {sorted(e)}')
+print(f'Posição do campeão mundial: {e.index("Ding Liren") + 1}° lugar.')

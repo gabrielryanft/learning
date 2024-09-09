@@ -1,0 +1,64 @@
+@charset "UTF-8";
+/*
+id= #
+class= .
+para ter duas classes é só separalas com um espaço. ex: class="bom ruim" tem a class bom e ruim. não da p fazer isso no id
+também é possivel por uma classe e um id em im elemento. só que o id vai será mais importante que a classe.
+*/
+
+*{
+    padding: 10px;
+}
+body{
+    background-color: #212121;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+div{
+    background-color:#d2ebe3;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #2E403B;
+
+}
+
+h1{
+    color: #afafaf;
+
+}
+
+h1#p{
+    background-color: #2E403B;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+h2{
+    color: #777777;
+    background-color:  #87b9ac;
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+p{
+    color: #202020;
+
+}
+
+.b{
+    color: #008000;
+
+}
+
+.m{
+    color: rgb(128, 126, 0);
+
+}
+
+.h{
+    color: #800000;
+
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>forms</h1>
+    <form action="acao.php" method="get" autocomplete="on">
+        <p>
+            <label for="iopt"></label>
+            <select name="coiso" id="iopt">
+                <optgroup label="Região sudeste">
+                    <option value="mg">Minas gerais</option>
+                    <option value="rj">Rio de janeiro</option>
+                    <option value="sp">São paulo</option>
+                </optgroup>
+                <optgroup label="Região nordeste">
+                    <option value="m">Maranhao</option>
+                    <option value="pe">Pernambuco</option>
+                    <option value="rn">Rio grande d onorte</option>
+                </optgroup>
+            </select>
+        </p>
+        
+        <p>
+            <label for="iprof">Profissão:</label>
+            <input type="text" id="iprof" name="prof" list="ilista">
+            <datalist id="ilista">
+                <option>Medico</option>
+                <option>construtor</option>
+                <option>engenheiro</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="imsg1">Mensagem</label>
+            <textarea name="msg1" id="imsg1" cols="30" rows="10"></textarea>
+            <!-- quando você usar o text area é melhr usar  o  metodo post na tag form.(pq ele pode conter mais de 3000g) -->
+        </p>
+
+    </form>
+</body>
+</html>

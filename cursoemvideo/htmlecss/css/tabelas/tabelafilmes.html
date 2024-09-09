@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de fimes</title>
+    <style>
+        h1{
+            font-variant:small-caps
+        }
+        th, td{
+            padding: 5px;
+            border: 1px solid black;
+        }
+        th{
+            font-variant: small-caps
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabela de Filmes</h1>
+    <table>
+        <tr>
+            <th>Gabriel<br>Totoso</th>
+            <th scope="col">Nomes</th>
+            <th colspan="3" scope="colgroup">Filmes</th>
+            <!-- <th></th>
+            <th></th> -->
+        </tr>
+        <tr>
+            <th rowspan="3" scope="rowgroup">Mulheres</th>
+            <!-- se use rowgroug ou col group quando a celula th está "falando "de mais de uma linha ou coluna de celulas. -->
+            <td>Josefa</td>
+            <td>Alien</td>
+            <td>Rambo</td>
+            <td>Vingadores</td>
+        </tr>
+        <tr>
+            <!-- <td></td> -->
+            <td>Rosenate</td>
+            <td>Hulk</td>
+            <td>Inception</td>
+            <td>Batman</td>
+        </tr>
+        <tr>
+            <!-- <td></td> -->
+            <td>Maricorpolha</td>
+            <td>Oblivion</td>
+            <td>Matrix</td>
+            <td>Big Hero</td>
+        </tr>
+        <tr>
+            <th rowspan="3" scope="rowgroup">Homens</th>
+            <td>Roger</td>
+            <td>Intocaveis</td>
+            <td>Amnesia</td>
+            <td>Gladiador</td>
+        </tr>
+        <tr>
+            <!-- <td></td> -->
+            <td>Jorge</td>
+            <td>Wall-E</td>
+            <td>Old Boy</td>
+            <td>Dangal?</td>
+        </tr>
+        <tr>
+            <!-- <td></td> -->
+            <td> Seu Zé</td>
+            <td>Star Wars</td>
+            <td>Taxi Driver</td>
+            <td>Toy Story</td>
+        </tr>
+        <tr>
+            <th colspan="4" scope="row">Gabriel é Totoso?</th>
+            <td>Sim</td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+    body{
+        background-image: linear-gradient(to right,  #364035, #335230)
+    }
+    section{
+        width: 90vw;
+        height: 500px
+    }
+    #pp{
+        text-align: center
+    }
+    #img{
+        float: left;
+        width: 30%;
+        height: 100%;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius:10px;
+        border-bottom: 2px solid rgb(5, 80, 0);
+        box-sizing: border-box;
+    }
+}
+
+@media screen and (min-width: 992px){
+
+    body{
+        background-image: linear-gradient(to right,  #364035, #335230)
+    }
+    section{
+        width: 900px;
+        height: 500px
+    }
+    #pp{
+        text-align: center
+    }
+    #img{
+        float: left;
+        width: 40%;
+        height: 100%;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius:10px;
+        border-bottom: 2px solid rgb(5, 80, 0);
+        box-sizing: border-box;
+    }
+}

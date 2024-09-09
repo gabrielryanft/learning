@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Primeiro formulario</h1>
+    <form action="acao.php" method="post" autocomplete="on">
+        <!-- no method, também tem get, que deixa o valor do input no url(faça um teste e vaja). o  get bota as informaçoes do input nio formulario, não use para informações sensiveis cpf etc. o post não bota as informações no link, use para informações sensiveis-->
+        <!-- também tem autocompçete="off", para desligar o autocomplete -->
+        <p><label for="inome">Nome:</label>
+            <!-- o lable sempre usa o id. -->
+             <input type="text" name="nome" id="inome"></p>
+        <p><label for="isob">Sobrenome:</label> <input type="text" name="sob" id="isob"></p>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

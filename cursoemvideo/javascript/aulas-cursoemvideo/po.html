@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Po</title>
+    <style>
+        body{
+            background-color: transparent;
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden
+        }
+        main{
+            /* nadaa... */
+        }
+        h1{
+            color: #F2D479;
+            background-color: #592B02;
+            padding: 10px;
+            border-radius: 10px;
+            margin: auto;
+            text-align: center;
+            width: 400px;
+            box-shadow: 0px 0px 10px black;
+            font-size: 3em
+        }
+        p{
+            color: #F2D479;
+            background-color: #592B02;
+            padding: 10px;
+            border-radius: 10px;
+            margin: auto;
+            text-align: center;
+            width: 500px;
+            box-shadow: 0px 0px 10px black;
+            font-size: 2em
+        }
+        .py{
+            background-color: #b6a05d75;
+            padding: 1px 2px 2px 2px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 5px black;
+        }
+    </style>
+</head>
+<body>
+        <main>
+            <h1 id="h1"></h1>
+            <p id="p"></p>
+        </main>
+
+    <script>
+        let po = prompt("Qual é o seu nome?");
+        document.getElementById("h1").innerHTML = `Olá <span class="py">${po}</span>, tudo bem?`;
+
+        let pi = confirm("Você quer ouvir uma história?");
+        if (pi === true) {
+            document.getElementById("p").textContent = "Desculpe, não tenho tempo para escrever uma história.";
+        } else {
+            document.getElementById("p").textContent = "Que bom que você não quis ouvir a minha história (eu não tinha uma).";
+        }
+    </script>
+    </script>
+</body>
+</html>

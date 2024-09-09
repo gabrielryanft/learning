@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IFrame e Botões</title>
+    <style>
+        h1{
+            font-variant: small-caps;
+            text-align:center 
+        }
+        p{
+            text-align: center;
+            margin: auto;
+            width: 300px
+        }
+        a{
+            background-color: darkgray;
+            padding: 5px ;
+            border-radius: 5px;
+            border: 1px solid black;
+            text-align: justify;
+            transition: border 200ms linear, padding 200ms linear;
+        }
+        a:hover{
+            border: 1px dashed black;
+            padding: 10px;
+
+
+        }
+        iframe{
+            display:block;
+            border: 3px dashed black;
+            width: 300px;
+            height: 300px;
+            margin: 20px auto
+        }
+    </style>
+</head>
+<body>
+    <h1>IFrame e Botões!</h1>
+    <p> <a href="pasta/p1.html" target="jorge">P1</a> <a href="pasta/p2.html"  target="jorge">P2</a> <a href="pasta/p3.html"  target="jorge">P3</a></p>
+    <iframe srcdoc="<h1>Escolha uma das opções a cima.</h1> <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta deleniti aspernatur illo facere repudiandae sequi labore ipsam cumque magni provident quas, dolorum quis similique ipsa expedita quisquam qui! Aperiam, id!</p>" frameborder="0" name="jorge"></iframe>
+    <!-- É necessario por um nome no uframe para ele ser funcional do jeito que queremos agora.
+            Depois de dar o nome ao iframe é só por esse nome no target do link. -->
+            <!-- Ao invés de eu tter posto um src no iftame ei botei im srcdoc, que permite que você escreva html ali dentro. -->
+</body>
+</html>

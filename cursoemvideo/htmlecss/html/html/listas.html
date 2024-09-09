@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>listas</title>
+</head>
+<body>
+    <h1>Listas</h1>
+    <h2>Listas ordenadas(ordered list(&lt;ol&gt; &lt;/ol&gt;))</h2>
+    <ol type="1"><!--dentro do type pode ser: "1"(nomerada de um pra frente); "A ou a"(de "a" a "z"); e "I ou i"(numeros romanos)-->
+        <li>Acordar</li><!--o "</li>" é opcional.-->
+        <li>Escovar os dentes</li>
+        <li>Comer</li>
+        <li>Estudar</li>
+      
+    </ol>
+
+    <ol type="1" start="5"><!-- se você quiser que a lista comece não do inicio, faça : <ol type="tipo que quiser" start="onde quiser EM NUMERO! ex: d = 4. sempre em numeros.">-->
+        <li>Ir p/ escola</li>
+        <li>Voltar da escola</li>
+        <li>Comer</li>
+        <li>Estudar</li>
+    </ol>
+
+    <h2>Listas não ordenadas(unordered list(&lt;ul&gt; &lt;/ul&gt;))</h2>
+        <ul type="circle"><!-- tipos de lista: com um circulo sem meio: circle; circulo com meio: disc; com quadrado: square;  -->
+            <li>Salada de fruta</li>
+            <li>Todinho</li>
+            <li>Hanburguer</li>
+            <li>Cimento</li>
+        </ul>
+
+    <h2>Juntando listas</h2>
+    <ol type="I">
+        <li>Salada de fruta</li>
+        <ul>
+            <li>Banana</li>
+            <li>Maçã</li>
+            <li>Etc...</li>
+        </ul>
+        <li>Todinho</li>
+        <ul>
+            <li>Todinho?</li>
+            <ul>
+                <li>Açúcar?</li>
+                <li>Cacau?</li>
+            </ul>
+            <li>Leite?</li>
+        </ul>
+        <li>Hanburguer</li>
+        <ol>
+            <li>Fazer hamburguer</li>
+            <li>Por no pão com outras coisas</li>
+            <li>comer</li>
+        </ol>
+        <li>Cimento</li>
+        <ol>
+            <li>Cimento?</li>
+            <li>Areia?</li>
+            <li>Água.?</li>
+        </ol>
+    </ol>
+    <h2>Lista de definições(definition list(&lt;dl&gt; &lt;/dl&gt;))</h2>
+    <dl>
+        <dt>Gostoso</dt><!--definition term-->
+        <dd>Ser muito bunitão</dd><!--definition description-->
+    </dl>
+
+</body>
+</html>

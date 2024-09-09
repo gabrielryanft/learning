@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numero p/ String</title>
+</head>
+<body>
+    <script>
+        // O prompt() retorna uma string(independente doque digitarmos dentro dele.), por isso tivemos que usar o number(), para transformar a string (que o prompt() nos deu)em um número.
+
+        // Tambémexiste o parseInt()(Transforma em numeros inteiros ) e o parseFloat()(transforma em numeros decimais(só se forem intregues numeros decimais, se só tiverem sido entregues numeros inteiros ele dara números inteiros.))
+
+        /* Se você quiser transformar um numero em uma string, eu posso usar o String(o que quiser converter) ou o
+        oquetuquer.toString()*/ 
+        var n1 = Number(prompt("Digite um numero.")) 
+        console.log(n1)
+        var n2 = Number(prompt("Digite outro numero."))
+        console.log(n2)
+        var n12 = n1 + n2
+        console.log(n12)
+        console.log(String(n12))
+        alert(`Os números ${n1} + ${n2} é igual a: ${n12}.`)
+    </script>
+</body>
+</html>

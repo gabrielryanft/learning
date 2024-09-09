@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Script</title>
+</head>
+<body>
+    <input type="button" value="Criar" onclick="criar()">
+    <div id="lista">
+
+    </div>
+    <input type="button" value="Limpar" onclick="limpar()">
+    <script>
+        function criar(){
+            var lista = document.querySelector('#lista')
+            lista.innerHTML += "<p>novo!!!</p>"
+        }
+        function limpar(){
+            lista.innerHTML = ''
+        }
+    </script>
+</body>
+</html>

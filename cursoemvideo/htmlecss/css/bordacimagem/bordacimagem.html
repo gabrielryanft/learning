@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borda personalizada</title>
+    <style>
+        h1#po{
+            border: 18px solid transparent;/*pode aumentar a grosura da borda. é nacessario ter uma borda para ter uma borda com img*/
+            padding: 10px;
+            border-image-source: url("Semtítulo.png");/*foto que vai ser a borda.*/
+            border-image-slice: 25;
+            border-image-repeat: repeat/*repete a borda*/
+        }
+        h1#pi{
+            border: 18px solid black;/*pode aumentar a grosura da borda.*/
+            padding: 10px;
+            /* shorthand: (resumido) */
+            border-image:url("Semtítulo.png") 25 stretch; /*estica a borda*/
+
+        }
+    </style>
+</head>
+<body>
+    <h1 id="po">Olá! Borda bunitinha</h1>
+    <h1 id="pi">Olá! Borda bunitinha</h1>
+</body>
+</html>

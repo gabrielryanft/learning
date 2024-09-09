@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>While</title>
+</head>
+<body>
+    <h1>Lista</h1>
+
+    <h2>While</h2>
+    <ul id="lista">
+
+    </ul>
+
+    <h2>Do While</h2>
+    <ul id="lista2">
+
+    </ul>
+
+    <h2>For</h2>
+    <ul id="lista3">
+
+    </ul>
+    <script>
+        var a = 1
+        var lista = document.getElementById('lista')
+        var lista2 = document.getElementById('lista2')
+        var lista3 = document.getElementById('lista3')
+
+        // Segue abaixo três jeitos de fazer a mesma coisa.
+
+        while (a <= 10){
+            var nlista = document.createElement('li')
+            nlista.textContent = `Aqui vai ${a}!`
+            lista.appendChild(nlista)
+            a++
+        } // o a sai daqui valendo 11
+
+        do {
+            var nlista = document.createElement('li')
+            nlista.textContent = `Aqui vai ${a}!`
+            lista2.appendChild(nlista)
+            a++
+        } while (a <= 20) // o a sai dai valendo 21
+
+        for(var n = 20; n<=30; n++){
+            var nlista = document.createElement('li')
+            nlista.textContent = `Aqui vai ${n}!`
+            lista3.appendChild(nlista)
+        } // o n sai dai valendo 31
+        //no navegador, o n vai começar como vinte, não como vinte e um como os outros loops. isso porque nós acabamos de criar o n e o a já estava criado . por isso que na segunda lista, a lista começa do 21.
+    </script>
+</body>
+</html>

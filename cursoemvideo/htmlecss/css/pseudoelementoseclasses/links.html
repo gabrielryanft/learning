@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+   <style>
+    /*
+    pseudo classe: :
+    pseudo element: ::
+    children: >
+    */
+       body{
+        font-family: Arial, Helvetica, sans-serif;
+       }
+
+       a{
+        color: #F2D479;
+        text-decoration: none;
+        font-weight: bold;
+       }
+
+       a:visited{ /*se voce je visitou*/
+        color: #A6763C;
+       }
+
+       a:hover{ /*passa o mouse em cima*/
+        font-size: 1.05em;
+        color: #423a23;
+        background-color: rgba(0, 0, 0, 0.144);
+        padding: 3px;
+        border-radius: 3px;
+        text-decoration: underline;
+       }
+       a:active{/*clica*/
+        font-size: 20em;
+        color: #592B02
+       }
+       a::before{/*  "::before" fas algo antes de algo.*/
+        content: 'link! ';
+        color:#2d538b;
+       }
+
+       a::after{/*  "::after" fas algo depois de algo.*/
+        content: ' link!';
+        color:#254472;
+       }
+   </style>
+</head>
+<body>
+        <h1>Personalisando links</h1>
+        <ul id="pop">
+            <li><a href="https://github.com/Gabryan1/Gabryan1" target="_blank" rel="external" class="po">github</a></li>
+            <li><a href="https://www.youtube.com/watch?v=vMlrcOVr7po&list=PLHz_AreHm4dlUpEXkY1AyVLQGcpSgVF8s&index=22" target="_blank" rel="external" class="po">youtube</a></li>
+            <li><a href="https://www.tiktok.com/@elitebodybuildingnews/video/7238600751839202566" target="_blank" rel="external" class="po">tiktok</a></li>  
+        </ul>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bom tamanho</title>
+</head>
+<body>
+    <h1>Tamanho da imagem adequado.</h1>
+    <p>Abra esse site em outro dispositivo ou mude o tamanho da guia do google.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="ip.png" type="image/png"><!--existe também: min-width: tamanho do coiso-->
+        <source media="(max-width: 1050px)" srcset="im.png" type="image/png">
+        <img src="ig.png" alt="Imagem grande moldavel">
+    </picture>
+
+    <h1>Reproduzindo audio</h1>
+
+    <p>Como reproduziro audio em html5:</p>
+
+    <!-- <audio src="Summer.mp3" controls autoplay></audio> OU:-->
+    <audio preload="metadata" controls loop><!--dentro do preload, tu pode por: auto(carrega os dados do arquivo e o arquivo.), metadata(dados do arquivo) e none(ñ carrega tudo)         o loop faz o audio ficar repetindo.-->
+        <source src="Summer.mp3" type="audio/mpeg">
+        <source src="Summer.ogg" type=""><!--tu ñ tem esse, mas é bom que tu tenha ele e o mp3.-->
+        <p>infelismente, o seu navegador não consegue reproduzir audio. clique <a href="Summer.mp3">aqui</a>para fazer o download do arquivo mp3.</p>
+    </audio>
+</body>
+</html>

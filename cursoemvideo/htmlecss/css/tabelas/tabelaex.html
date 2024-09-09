@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex de tabela</title>
+    <style>
+        h1{
+            font-variant: small-caps
+        }
+        table{
+            width: 200px
+        }
+        td{
+            border: 1px solid black ;
+            padding: 5px
+        }
+    </style>
+</head>
+<body>
+    <h1>Ex de Tabela</h1>
+    <table>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td rowspan="2">3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>6</td>
+            <!-- <td></td> -->
+            <td>7</td>
+        </tr>
+        <tr>
+            <td colspan="3">8</td>
+            <!-- <td></td>
+            <td></td> -->
+            <td>9</td>
+        </tr>
+        <tr>
+            <td rowspan="2">10</td>
+            <td colspan="2">11</td>
+            <!-- <td></td> -->
+            <td>12</td>
+        </tr>
+        <tr>
+            <!-- <td></td> -->
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td colspan="4">a</td>
+            <!-- <td></td>
+            <td></td>
+            <td></td> -->
+            <td rowspan="4">b</td>
+        </tr>
+        <tr>
+            <td rowspan="4">c</td>
+            <td>d</td>
+            <td>e</td>
+            <td>f</td>
+            <!-- <td></td> -->
+        </tr>
+        <tr>
+            <!-- <td></td> -->
+            <td>g</td>
+            <td>h</td>
+            <td>i</td>
+            <!-- <td></td> -->
+        </tr>
+        <tr>
+            <!-- <td></td> -->
+            <td>j</td>
+            <td>k</td>
+            <td>l</td>
+            <!-- <td></td> -->
+        </tr>
+        <tr>
+            <!-- <td></td> -->
+            <td colspan="4">m</td>
+            <!-- <td></td>
+            <td></td>
+            <td></td> -->
+        </tr>
+    </table>
+</body>
+</html>

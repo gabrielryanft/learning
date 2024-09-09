@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velocidade</title>
+</head>
+<body>
+    <h1>Velocidade</h1>
+    <input type="number" id="vel">
+    <input type="button" id="butt" value="Calcular!">
+    <h2 id="multa"></h2>
+    <script>
+        var butt = document.getElementById('butt')
+        butt.addEventListener('click', calc)
+            
+        function calc(){
+            var vel = document.getElementById('vel')
+            var veln = Number(vel.value)
+            var multa = document.getElementById('multa')
+            
+            if(veln > 60){
+                multa.innerHTML = `${veln}kh é muito rápido. Você foi multado.`
+            } else if(veln < 20){
+                multa.innerHTML = `${veln}kh! Tá dirigindo uma tartariga filho da puta!? Você foi multado(Muito devagar.).`
+                } else{
+                    multa.innerHTML = `${veln}kh está dentro do limite. Tenha um bom dia.`
+                }
+            }
+    </script>
+</body>
+</html>

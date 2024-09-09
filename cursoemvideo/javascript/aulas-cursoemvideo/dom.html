@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+       
+    </style>
+</head>
+<body>
+    <h1>DOM</h1>
+    <p>O primeiro jeito de pegar um elemento pelo dom é com o <strong>getElementsByTagName('h1')</strong></p>
+    <p>o segundo é por id: getElementById()</p>
+    <p></p>
+    <p>o terceiro é por name getElementsByName()</p>
+    <p>O quarto jeito: getElementsByClassName()</p>
+    <p id="p"></p>
+    <script>
+        var p1 = document.body.getElementsByTagName('p')[0]
+        var p3 = document.body.getElementsByTagName('p')[2]
+        // O [0] significa que eu quero só o primeiro pargrafo (0=1° 1=2° 2=3° 3=4° 4=5° 5=6° 6=7°...)
+        p3.innerHTML = `o primeiro paragrefo diz que: "` + p1.innerHTML + `". foi como eu fiz isso.`
+        p3.style.color = 'rgba(0, 0, 0, 0.5)'
+        var corpo = document.body
+        corpo.style.color = 'white'
+        corpo.style.background = 'rgba(15, 15, 15, 0.719)'
+        // quer
+        var p4 = document.querySelector('p#p')
+        p4.innerText = 'Gabriel totosão'
+    </script>
+</body>
+</html>

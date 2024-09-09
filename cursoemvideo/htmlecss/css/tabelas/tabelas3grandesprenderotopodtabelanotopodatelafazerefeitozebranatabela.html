@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Grandes</title>
+    <style>
+        h1{
+            font-variant: small-caps;
+        }
+        table{
+            border-collapse: collapse;
+            width:400px;
+            position: relative;  /* para fazer o topo da tabela colar no topo da pagina */
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            font-variant: small-caps;
+            background-color: rgb(49, 49, 49);
+            padding: 5px;
+            border-radius:5px 5px 0px 0px;
+            border: 1px solid black;
+            color: white
+        }
+        thead, tfoot{
+            background-color: rgb(49, 49, 49);
+        }
+
+
+        /* para fazer o topo da tabela colar no topo da pagina */
+        thead th{
+            position: sticky;
+            top: -1px;
+            background-color: rgb(49, 49, 49);
+            border: 1px solid black;
+        }
+
+
+
+
+        tbody tr:nth-child(even){
+            /* even é par, ou seja, as linhas impares: */
+            background-color: gray
+        }
+        tbody tr:nth-child(odd){
+            /* odd é impar , ou seja , as linhas pares: */
+            background-color: white
+        }
+
+
+
+
+        td, th{
+            border: 1px solid black;
+            padding: 5px;
+            text-align:center;
+        }
+        th, tfoot td{
+            color: white
+        }
+        .coluna{
+            width: 40%
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabelas Grandes</h1>
+    <!-- anatomia para tabelas grandes: 
+            thead
+                tr, td, th
+            tbody
+                tr, td, th
+            tfoot
+                tr, td, th
+    -->
+    <table>
+        <caption>Gabriel Totoso</caption>
+        <thead>
+            <tr>
+                <th scope="col">Habilidades do</th>
+                <th scope="col" class="coluna">Como É?</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Xadrez</td>
+                <td>Muito bom</td>
+            </tr>
+            <tr>
+                <td>Desenvolvedor</td>
+                <td>Mais ou Menos</td>
+            </tr>
+            <tr>
+                <td>Saberes gerais</td>
+                <td>Bem ruim</td>
+            </tr>
+            <tr>
+                <td>Escola</td>
+                <td>Uma bosta</td>
+            </tr>
+            <tr>
+                <td>Cursos</td>
+                <td>Bem(Eu acho).</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Conclusão</th>
+                <td>Não temos uma.</td>
+            </tr>
+        </tfoot>
+    </table>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam similique eveniet, optio hic, ratione nemo culpa quaerat expedita minus fugit assumenda rem iure odio beatae tempora fuga? Animi, hicLorem ipsum dolor sit amet consectetur adipisicing elit. Laborum pariatur aspernatur quos corporis eligendi veniam, quis, illo minus accusantium labore, facere earum fugit placeat praesentium laboriosam veritatis iure soluta tenetur?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio distinctio vel, quod laboriosam non quos recusandae. Quibusdam labore beatae suscipit ex doloribus sit nemo, laborum, deserunt dolore voluptate consequatur Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat dolorem odit nesciunt, qui, vitae deserunt cum voluptatibus ipsum odio exercitationem voluptate optio neque consequatur repellendus, praesentium quaerat rem earum pariatur!</p>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam similique eveniet, optio hic, ratione nemo culpa quaerat expedita minus fugit assumenda rem iure odio beatae tempora fuga? Animi, hicLorem ipsum dolor sit amet consectetur adipisicing elit. Laborum pariatur aspernatur quos corporis eligendi veniam, quis, illo minus accusantium labore, facere earum fugit placeat praesentium laboriosam veritatis iure soluta tenetur?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio distinctio vel, quod laboriosam non quos recusandae. Quibusdam labore beatae suscipit ex doloribus sit nemo, laborum, deserunt dolore voluptate consequatur Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat dolorem odit nesciunt, qui, vitae deserunt cum voluptatibus ipsum odio exercitationem voluptate optio neque consequatur repellendus, praesentium quaerat rem earum pariatur!</p>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam similique eveniet, optio hic, ratione nemo culpa quaerat expedita minus fugit assumenda rem iure odio beatae tempora fuga? Animi, hicLorem ipsum dolor sit amet consectetur adipisicing elit. Laborum pariatur aspernatur quos corporis eligendi veniam, quis, illo minus accusantium labore, facere earum fugit placeat praesentium laboriosam veritatis iure soluta tenetur?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio distinctio vel, quod laboriosam non quos recusandae. Quibusdam labore beatae suscipit ex doloribus sit nemo, laborum, deserunt dolore voluptate consequatur Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat dolorem odit nesciunt, qui, vitae deserunt cum voluptatibus ipsum odio exercitationem voluptate optio neque consequatur repellendus, praesentium quaerat rem earum pariatur!</p>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam similique eveniet, optio hic, ratione nemo culpa quaerat expedita minus fugit assumenda rem iure odio beatae tempora fuga? Animi, hicLorem ipsum dolor sit amet consectetur adipisicing elit. Laborum pariatur aspernatur quos corporis eligendi veniam, quis, illo minus accusantium labore, facere earum fugit placeat praesentium laboriosam veritatis iure soluta tenetur?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio distinctio vel, quod laboriosam non quos recusandae. Quibusdam labore beatae suscipit ex doloribus sit nemo, laborum, deserunt dolore voluptate consequatur Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat dolorem odit nesciunt, qui, vitae deserunt cum voluptatibus ipsum odio exercitationem voluptate optio neque consequatur repellendus, praesentium quaerat rem earum pariatur!</p>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam similique eveniet, optio hic, ratione nemo culpa quaerat expedita minus fugit assumenda rem iure odio beatae tempora fuga? Animi, hicLorem ipsum dolor sit amet consectetur adipisicing elit. Laborum pariatur aspernatur quos corporis eligendi veniam, quis, illo minus accusantium labore, facere earum fugit placeat praesentium laboriosam veritatis iure soluta tenetur?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio distinctio vel, quod laboriosam non quos recusandae. Quibusdam labore beatae suscipit ex doloribus sit nemo, laborum, deserunt dolore voluptate consequatur Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat dolorem odit nesciunt, qui, vitae deserunt cum voluptatibus ipsum odio exercitationem voluptate optio neque consequatur repellendus, praesentium quaerat rem earum pariatur!</p>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam similique eveniet, optio hic, ratione nemo culpa quaerat expedita minus fugit assumenda rem iure odio beatae tempora fuga? Animi, hicLorem ipsum dolor sit amet consectetur adipisicing elit. Laborum pariatur aspernatur quos corporis eligendi veniam, quis, illo minus accusantium labore, facere earum fugit placeat praesentium laboriosam veritatis iure soluta tenetur?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio distinctio vel, quod laboriosam non quos recusandae. Quibusdam labore beatae suscipit ex doloribus sit nemo, laborum, deserunt dolore voluptate consequatur Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat dolorem odit nesciunt, qui, vitae deserunt cum voluptatibus ipsum odio exercitationem voluptate optio neque consequatur repellendus, praesentium quaerat rem earum pariatur!</p>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam similique eveniet, optio hic, ratione nemo culpa quaerat expedita minus fugit assumenda rem iure odio beatae tempora fuga? Animi, hicLorem ipsum dolor sit amet consectetur adipisicing elit. Laborum pariatur aspernatur quos corporis eligendi veniam, quis, illo minus accusantium labore, facere earum fugit placeat praesentium laboriosam veritatis iure soluta tenetur?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio distinctio vel, quod laboriosam non quos recusandae. Quibusdam labore beatae suscipit ex doloribus sit nemo, laborum, deserunt dolore voluptate consequatur Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat dolorem odit nesciunt, qui, vitae deserunt cum voluptatibus ipsum odio exercitationem voluptate optio neque consequatur repellendus, praesentium quaerat rem earum pariatur!</p>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam similique eveniet, optio hic, ratione nemo culpa quaerat expedita minus fugit assumenda rem iure odio beatae tempora fuga? Animi, hicLorem ipsum dolor sit amet consectetur adipisicing elit. Laborum pariatur aspernatur quos corporis eligendi veniam, quis, illo minus accusantium labore, facere earum fugit placeat praesentium laboriosam veritatis iure soluta tenetur?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio distinctio vel, quod laboriosam non quos recusandae. Quibusdam labore beatae suscipit ex doloribus sit nemo, laborum, deserunt dolore voluptate consequatur Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat dolorem odit nesciunt, qui, vitae deserunt cum voluptatibus ipsum odio exercitationem voluptate optio neque consequatur repellendus, praesentium quaerat rem earum pariatur!</p>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam similique eveniet, optio hic, ratione nemo culpa quaerat expedita minus fugit assumenda rem iure odio beatae tempora fuga? Animi, hicLorem ipsum dolor sit amet consectetur adipisicing elit. Laborum pariatur aspernatur quos corporis eligendi veniam, quis, illo minus accusantium labore, facere earum fugit placeat praesentium laboriosam veritatis iure soluta tenetur?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio distinctio vel, quod laboriosam non quos recusandae. Quibusdam labore beatae suscipit ex doloribus sit nemo, laborum, deserunt dolore voluptate consequatur Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat dolorem odit nesciunt, qui, vitae deserunt cum voluptatibus ipsum odio exercitationem voluptate optio neque consequatur repellendus, praesentium quaerat rem earum pariatur!</p>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam similique eveniet, optio hic, ratione nemo culpa quaerat expedita minus fugit assumenda rem iure odio beatae tempora fuga? Animi, hicLorem ipsum dolor sit amet consectetur adipisicing elit. Laborum pariatur aspernatur quos corporis eligendi veniam, quis, illo minus accusantium labore, facere earum fugit placeat praesentium laboriosam veritatis iure soluta tenetur?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio distinctio vel, quod laboriosam non quos recusandae. Quibusdam labore beatae suscipit ex doloribus sit nemo, laborum, deserunt dolore voluptate consequatur Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat dolorem odit nesciunt, qui, vitae deserunt cum voluptatibus ipsum odio exercitationem voluptate optio neque consequatur repellendus, praesentium quaerat rem earum pariatur!</p>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam similique eveniet, optio hic, ratione nemo culpa quaerat expedita minus fugit assumenda rem iure odio beatae tempora fuga? Animi, hicLorem ipsum dolor sit amet consectetur adipisicing elit. Laborum pariatur aspernatur quos corporis eligendi veniam, quis, illo minus accusantium labore, facere earum fugit placeat praesentium laboriosam veritatis iure soluta tenetur?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio distinctio vel, quod laboriosam non quos recusandae. Quibusdam labore beatae suscipit ex doloribus sit nemo, laborum, deserunt dolore voluptate consequatur Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat dolorem odit nesciunt, qui, vitae deserunt cum voluptatibus ipsum odio exercitationem voluptate optio neque consequatur repellendus, praesentium quaerat rem earum pariatur!</p>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam similique eveniet, optio hic, ratione nemo culpa quaerat expedita minus fugit assumenda rem iure odio beatae tempora fuga? Animi, hicLorem ipsum dolor sit amet consectetur adipisicing elit. Laborum pariatur aspernatur quos corporis eligendi veniam, quis, illo minus accusantium labore, facere earum fugit placeat praesentium laboriosam veritatis iure soluta tenetur?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio distinctio vel, quod laboriosam non quos recusandae. Quibusdam labore beatae suscipit ex doloribus sit nemo, laborum, deserunt dolore voluptate consequatur Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat dolorem odit nesciunt, qui, vitae deserunt cum voluptatibus ipsum odio exercitationem voluptate optio neque consequatur repellendus, praesentium quaerat rem earum pariatur!</p>
+    </body>
+</html>

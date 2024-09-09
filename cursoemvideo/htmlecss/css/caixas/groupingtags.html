@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #B59686;
+            width: 600px;
+            margin: auto;
+            margin-top: 20px;
+        }
+        body:active{
+            background-color: #9c8274;
+        }
+        header{
+            background-color: #A87128;
+            padding: 10px;
+            border-radius:  40px 5px;
+            text-align:center;
+            border: 1px solid black;
+            
+        }
+        header:active{
+            box-shadow: inset 0px 0px 20px #000000;
+        }
+        h1{
+            background-color: #751F35;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow:0px 0px 10px rgb(88, 73, 64);
+            box-shadow: inset 0px 0px 10px #3f121d; /*sombra interna!!*/
+        }
+        nav{
+            background-color: white;
+            padding: 10px;
+            border-radius: 10px;
+            margin: auto;
+            box-shadow:0px 0px 10px rgb(88, 73, 64);
+            width: 200px;
+            box-shadow: inset 0px 0px 10px rgb(110, 110, 110);
+
+        }
+        a:hover{
+            background-color: #9c274493;
+            padding: 5px;
+            border-radius: 10px;
+            box-shadow:0px 0px 10px rgb(184, 184, 184);
+            box-shadow: inset 0px 0px 10px #3f121d;
+            border: 1px solid #3f121d;
+        }
+        main{
+            background-color: #A87128;
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid black;
+        }
+        main:active{
+            box-shadow: inset 0px 0px 20px #000000;
+        }
+        h2{
+            background-color: #751F35;
+            padding: 5px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow:0px 0px 10px rgb(88, 73, 64);
+        }
+        article>p{
+            background-color: white;
+            padding: 5px;
+            border-radius: 10px;
+            box-shadow:0px 0px 10px rgb(88, 73, 64);
+            text-indent: 2em;
+        }
+        aside{
+            background-color: #3C5B43;
+            margin:auto;
+            width: 200px;
+            text-align: center;
+            border-radius: 5px;
+            box-shadow:0px 0px 10px rgb(88, 73, 64);
+        }
+        footer{
+            background-color: #A87128;
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid black;
+        }
+        footer:active{
+            box-shadow: inset 0px 0px 20px #000000;
+
+        }
+        footer>p{
+            background-color: #004561;
+            margin:auto;
+            width: 400px;
+            text-align: center;
+            padding:5px;
+            border-radius: 10px;
+            box-shadow:0px 0px 10px rgb(88, 73, 64);
+        }
+        div#bola{
+            background-color: #592B02;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            text-align: center;
+            margin: auto;
+            margin-top: 20px;
+            box-shadow: 0px 0px 10px #381a00;
+
+        }
+        div>img{
+            height: 60px;
+            width: 60px;
+            margin-top: 20px;
+            
+        }
+        div#bola:hover{
+            box-shadow: 0px 0px 10px #7e685d;
+            
+        }
+        div#bola:active{
+            box-shadow: inset 0px 0px 20px #000000;
+        }
+    </style>
+</head>
+<body>
+    <header id="cabeçadocorpo">
+        <h1>Meu site!</h1>
+        <nav id="menu">
+            <a href="">link</a>
+            <a href="">link</a>
+            <a href="">link</a>
+            <a href="">link</a>
+        </nav>
+    </header>
+    <main id="principal">
+        <section id="assuntos">
+        </section>
+        <section id="noticias">
+            <article id="artigo">
+                <h2>o cara lá</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore quis, unde quisquam perspiciatis consequuntur blanditiis non! Consequatur harum est corrupti accusamus! Provident, deleniti a eum et optio numquam voluptatum nemo?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est assumenda culpa omnis quam explicabo provident porro, deserunt aut, placeat eligendi ducimus reprehenderit ipsam et mollitia. Facere libero ab iste consequuntur.</p>
+                <aside>
+                    <p>escrito por jorge aurelio</p>
+                </aside>
+            </article>
+            <article>
+            </article>
+        </section>
+    </main>
+    <footer id="rodape">
+        <p>desenvolvido pelo gabriel.</p>
+    </footer>
+    <div id="bola"><img src="character-3.png" alt="img"></div>
+</body>
+</html>
