@@ -1,3 +1,3 @@
- 
+#  
 <a href='https://gabrielryanft.github.io/learning/cursoemvideo/python/exerciciospython/aula22 funcoes locais/ex109/ex109-metadedobroporcento.py/' target='_blank' rel='next'>ex109-metadedobroporcento.py</a><br/>
 <a href='https://gabrielryanft.github.io/learning/cursoemvideo/python/exerciciospython/aula22 funcoes locais/ex109/funcoes.py/' target='_blank' rel='next'>funcoes.py</a><br/>

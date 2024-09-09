@@ -1,4 +1,4 @@
-aula17 
+# aula17 
 <a href='https://gabrielryanft.github.io/learning/cursoemvideo/python/exerciciospython/aula17/ex81-posdosnumsadicionadosemordem.py/' target='_blank' rel='next'>ex81-posdosnumsadicionadosemordem.py</a><br/>
 <a href='https://gabrielryanft.github.io/learning/cursoemvideo/python/exerciciospython/aula17/ex79-listad5nums.py/' target='_blank' rel='next'>ex79-listad5nums.py</a><br/>
 <a href='https://gabrielryanft.github.io/learning/cursoemvideo/python/exerciciospython/aula17/ex78-parenteses.py/' target='_blank' rel='next'>ex78-parenteses.py</a><br/>

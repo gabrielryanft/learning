@@ -1,4 +1,4 @@
-aula10 
+# aula10 
 <a href='https://gabrielryanft.github.io/learning/cursoemvideo/python/exerciciospython/aula10/ex034-porcentagemsalario.py/' target='_blank' rel='next'>ex034-porcentagemsalario.py</a><br/>
 <a href='https://gabrielryanft.github.io/learning/cursoemvideo/python/exerciciospython/aula10/ex035-triangulo.py/' target='_blank' rel='next'>ex035-triangulo.py</a><br/>
 <a href='https://gabrielryanft.github.io/learning/cursoemvideo/python/exerciciospython/aula10/ex028-escolhaumnumcomsleepetime.py/' target='_blank' rel='next'>ex028-escolhaumnumcomsleepetime.py</a><br/>
