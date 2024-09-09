@@ -1,3 +1,4 @@
-# cursoemvideo
-Curso em Vídeo é um canal no youtube que ensina coisas relacionadas a tecnologia.
-Este diretório abriga as anotações e as atividades que eu fiz ao assistir as aulas do Curso em Vídeo.
+cursoemvideo 
+<a href='https://gabrielryanft.github.io/learning/cursoemvideo/python/' target='_blank' rel='next'>python</a><br/>
+<a href='https://gabrielryanft.github.io/learning/cursoemvideo/javascript/' target='_blank' rel='next'>javascript</a><br/>
+<a href='https://gabrielryanft.github.io/learning/cursoemvideo/htmlecss/' target='_blank' rel='next'>htmlecss</a><br/>

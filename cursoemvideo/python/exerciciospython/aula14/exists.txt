@@ -1,0 +1,9 @@
+ex064-somanums999pparar.py
+ex060-fatorial.py
+ex058-adivinheonum.py
+ex059-somamaior.py
+ex063-febonacci.py
+ex065-continuarmediamaiormenor.py
+ex057-reserradarepete.py
+ex061-geradordepa.py
+ex062-geradordepacomcoisasamais.py

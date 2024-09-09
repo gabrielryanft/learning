@@ -1,0 +1,5 @@
+icon-tablet.png
+icon-phone.png
+icon-tv.png
+icon-print.png
+icon-pc.png

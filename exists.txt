@@ -1,0 +1,9 @@
+debu.sh
+oi
+oi.txt
+copia.sh
+test.sh
+.gitignore
+.gitattributes
+cursoemvideo
+.git

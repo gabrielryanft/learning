@@ -1,0 +1,9 @@
+expython005-aula7.py
+expython010-aula7.py
+expython007-aula7.py
+expython012-aula7.py
+expython006-aula7.py
+expython009-aula7.py
+expython011-aula7.py
+expython013-aaula7.py
+expython008-aula7.py
