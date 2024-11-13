@@ -1,5 +1,0 @@
-cssinline.html
-style.css
-pagina2.html
-cssexterno.html
-csslocal.html

@@ -1,3 +1,0 @@
-expython1-aula4.py
-expython3-aula4.py
-expython2-aula4.py

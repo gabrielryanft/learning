@@ -1,6 +1,0 @@
-ex088-megasena.py
-ex089-alunosmedia.py
-ex85-7numspareseimpares.py
-ex84-pessoaepeso.py
-ex86-tabela.py
-ex87-tabela2.py

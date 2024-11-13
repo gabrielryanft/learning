@@ -1,3 +1,0 @@
-mediaquery.html
-imgs
-style

@@ -1,2 +1,0 @@
-aula6.py
-aula6isnum.py

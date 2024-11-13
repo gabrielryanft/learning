@@ -1,5 +1,0 @@
-ex100-numbers2.py
-ex099-numbers.py
-ex096-terrainsize.py
-ex097-line.py
-ex098-counting.py

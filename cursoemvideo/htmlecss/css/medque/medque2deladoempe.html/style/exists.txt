@@ -1,3 +1,0 @@
-landscape.css
-portrait.css
-all.css

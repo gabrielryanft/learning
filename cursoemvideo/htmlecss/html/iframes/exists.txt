@@ -1,6 +1,0 @@
-iframe2interno.html
-iframe4seguranca.html
-iframe5coisaslegais.html
-iframe3botaoprojetor.html
-pasta
-iframes.html

@@ -1,5 +1,0 @@
-favicon-16x16.png
-tamanhox.html
-tamanhom.html
-cutout.png
-fontestamanho.html

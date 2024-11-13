@@ -1,6 +1,0 @@
-ex095-continuingexo93.py
-ex092-workrecordbook.py
-ex090-nomealunomediapasoureprovou.py
-ex093-chessplayer.py
-ex094-people.py
-ex091-dados.py

@@ -1,6 +1,0 @@
-ex81-posdosnumsadicionadosemordem.py
-ex79-listad5nums.py
-ex78-parenteses.py
-ex83-listapareseimpares.py
-ex82-listadenums.py
-ex80-dignuminfnitrepetidonpode.py

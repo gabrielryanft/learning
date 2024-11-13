@@ -1,2 +1,0 @@
-coisasjs.html
-coisas.js

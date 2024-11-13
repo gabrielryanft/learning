@@ -1,6 +1,0 @@
-expython017-aula8.py
-ex021
-expython020-aula8.py
-expython018-aula8.py
-expython016-aula8.py
-expython019-aula8.py

@@ -1,4 +1,0 @@
-aula6
-aula8
-primeiropython-aula4.py
-aula7-matematicaeformat

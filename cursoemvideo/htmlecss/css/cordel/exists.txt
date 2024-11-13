@@ -1,3 +1,0 @@
-cordel.html
-imagens
-style

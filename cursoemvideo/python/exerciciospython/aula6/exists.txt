@@ -1,2 +1,0 @@
-expython003-aula6.py
-expython004-aula6.py

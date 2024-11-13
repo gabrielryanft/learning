@@ -1,3 +1,0 @@
-format_douro-1.png
-links.html
-pseudoclasses

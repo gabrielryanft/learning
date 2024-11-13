@@ -1,6 +1,0 @@
-ex027-primeiroeultomonome.py
-ex022-nomecompleto.py
-ex026-osazes.py
-ex024-comecacomsanto.py
-ex023numde0a9999.py
-ex025-temsilvanonometodocomin.py

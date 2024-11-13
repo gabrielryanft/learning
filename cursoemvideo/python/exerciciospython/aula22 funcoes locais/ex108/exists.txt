@@ -1,2 +1,0 @@
-funcoes.py
-ex108-metadedobroporcento.py

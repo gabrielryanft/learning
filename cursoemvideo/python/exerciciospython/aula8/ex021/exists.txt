@@ -1,2 +1,0 @@
-ribe.mp3
-expython021-aula8.py

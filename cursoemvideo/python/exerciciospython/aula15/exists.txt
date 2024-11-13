@@ -1,6 +1,0 @@
-ex067-tabuada.py
-ex066-digumnum999pparar.py
-ex070-listadeprodutos.py
-ex069-listadepessoas.py
-ex071-quabtascedulas.py
-ex068-parouimpar.py

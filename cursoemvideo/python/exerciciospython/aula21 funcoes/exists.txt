@@ -1,6 +1,0 @@
-ex103-player.py
-ex0101-vote.py
-ex106-help.py
-ex105-grades.py
-ex102-factorial.py
-ex104-int.py

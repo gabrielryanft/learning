@@ -1,6 +1,0 @@
-ex077-vogais.py
-ex076-produtoseprecos.py
-ex075-listadenum.py
-ex073-enxadristas.py
-ex072-numextenso.py
-ex074-numsaleatorios.py
