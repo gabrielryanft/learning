@@ -34,5 +34,5 @@ organize () {
 }
 organize "https://gabrielryanft.github.io/learning" "$(pwd)"
 
-rm "$1/exists.txt" 2> /dev/null
+rm "$(pwd)/exists.txt" 2> /dev/null
 clean "$(pwd)"
