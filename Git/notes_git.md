@@ -68,21 +68,23 @@ merge current branch with other:
 if the same file is diferent in the merged branches(conflicts can occur in and out of the master branch.), it gives a "error":
 HEAD = current branch (can be seen in .git/HEAD, i.e. show the name of current branch.)
 
+```
 <<<<<<< HEAD 
-		<tbody>         \
+		<tbody>	            \
 			<tr>1</tr>   |      
-			<tr>2</tr>    \      
-			<tr>3</tr>    /      
+			<tr>2</tr>    \  file in the 
+			<tr>3</tr>    /   current branch   
 			<tr>4</tr>   |      
-		</tbody>        / 
+		</tbody>	     / 
 =======         
-	<ul>                \
+	<ul>			\
 		<li>this</li>    |
-		<li>p</li>        >
-		<li>p</li>       |
+		<li>p</li>        > file in the
+		<li>p</li>       |   other branch
 		<li>p</li>      /   
 	</ul>         
 >>>>>>> other_branch
+```
 
 ### delete branch 
 
@@ -305,10 +307,12 @@ branch bran2:
 
 branches:
 
-	o | -> some other commit in master
-	| 0 -> commit in bran2
-    |/
-	o ->initial cmt (branch = master)
+```
+o | -> some other commit in master
+| 0 -> commit in bran2
+|/
+o ->initial cmt (branch = master)
+```
 
 to rebase the current branch with an other one branch: 
 
@@ -320,23 +324,27 @@ in the bran2:
 
 branches:
 
-    | 0 -> commit in bran2	\
-	|/						 | the bran2 synchronized with the head of the master branch.
-    o -> some other commit  /
-	|    in master 
-    |
-	o ->initial cmt (branch = master)
+```
+| 0 -> commit in bran2	\
+|/			 | the bran2 synchronized with the head of the master branch.
+o -> some other commit  /
+|    in master 
+|
+o ->initial cmt (branch = master)
+```
 
 now, in the master branch, 
 
 `git rebase bran2`
 
-    0 -> commit in bran2	\
-	|						 | the bran2 and master are now, one.
-    o -> some other commit  /
-	|    in master 
-    |
-	o ->initial cmt (branch = master)
+```
+0 -> commit in bran2	\
+|			 | the bran2 and master are now, one.
+o -> some other commit  /
+|    in master 
+|
+o ->initial cmt (branch = master)
+```
 
 
 
