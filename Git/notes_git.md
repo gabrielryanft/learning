@@ -70,19 +70,19 @@ HEAD = current branch (can be seen in .git/HEAD, i.e. show the name of current b
 
 ```
 <<<<<<< HEAD 
-		<tbody>	            \
-			<tr>1</tr>   |      
-			<tr>2</tr>    \  file in the 
-			<tr>3</tr>    /   current branch   
-			<tr>4</tr>   |      
-		</tbody>	     / 
+<tbody>			\
+	<tr>1</tr>   |      
+	<tr>2</tr>    \  file in the 
+	<tr>3</tr>    /   current branch   
+	<tr>4</tr>   |      
+</tbody>		/ 
 =======         
-	<ul>			\
-		<li>this</li>    |
-		<li>p</li>        > file in the
-		<li>p</li>       |   other branch
-		<li>p</li>      /   
-	</ul>         
+<ul>				\
+	<li>this</li>    |
+	<li>p</li>        > file in the
+	<li>p</li>       |   other branch
+	<li>p</li>      /   
+</ul>         
 >>>>>>> other_branch
 ```
 
