@@ -32,7 +32,7 @@ always with the -m flag, to commit with a message:
 
 ### git push
 
-send to cloud, github, gitlab *et citera*
+send to cloud, GitHub, gitlab *et citera*
 
 ## git log
 
@@ -69,6 +69,7 @@ if the same file is diferent in the merged branches(conflicts can occur in and o
 HEAD = current branch (can be seen in .git/HEAD, i.e. show the name of current branch.)
 
 ```
+
 <<<<<<< HEAD 
 <tbody>			\
 	<tr>1</tr>   |      
@@ -84,6 +85,7 @@ HEAD = current branch (can be seen in .git/HEAD, i.e. show the name of current b
 	<li>p</li>      /   
 </ul>         
 >>>>>>> other_branch
+
 ```
 
 ### delete branch 
@@ -104,7 +106,9 @@ or `git diff branc1 branch2` to compare 2 branches (not necessarily the one you 
 `git diff branc1..branch2`
 
 Ex. output: ( inside parentheses are my observations )
+
 ```
+
 diff --git a/index.html b/index.html
 index 37fb774..ffdaed4 100644
 --- a/index.html ( -/a = the doc in the other branch )
@@ -134,6 +138,7 @@ index 37fb774..ffdaed4 100644
 +               </tbody>
  </body>
  </html>
+
 ```
 
 ### diffing staged and not staged files (past and present of current branch)
@@ -141,7 +146,9 @@ index 37fb774..ffdaed4 100644
 `git diff --staged`
 
 Ex. output: ( inside parentheses are my observations )
+
 ```
+
 diff --git a/index.html b/index.html
 index dcd00ea..ffdaed4 100644
 --- a/index.html ( -/a = the past doc )
@@ -160,6 +167,7 @@ index dcd00ea..ffdaed4 100644
                 <tbody>
                         <tr>1</tr>
                         <tr>2</tr>
+
 ```
 
 ### diff commits
@@ -167,9 +175,13 @@ index dcd00ea..ffdaed4 100644
 `git diff commit_id1 commit_id2`
 
 Ex.:
+
 ´$ git log --oneline`
+
 output:
+
 ```
+
 cf46bbb (HEAD -> master) change index	(compare this one with...)
 2e57c4a Merge branch 'change'
 01575e4 updated index
@@ -186,7 +198,9 @@ ce6ac7f add index
 c85694e update .gitignore
 7aeb373 add file new_thing.txt
 3aa6734 first commit
+
 ```
+
 `git diff cf46bbb 9b7ef17` 
 
 \* if you are in a old version of git, use:
@@ -194,7 +208,9 @@ c85694e update .gitignore
 `git diff cf46bbb..9b7ef17`
 
 output:
+
 ```
+
 diff --git a/index.html b/index.html
 index 37fb774..7e28d11 100644
 --- a/index.html
@@ -213,6 +229,7 @@ index 37fb774..7e28d11 100644
 +       <p>made in the chande branch</p>
  </body>
  </html>
+
 ```
 
 ## git stash
@@ -256,11 +273,13 @@ or use head and the number of commits you want to go back.
 `git checkout HEAD~2`
 
 Ex.:
+
 `git log --oneline`
 
 output: 
 
 ```
+
 2c77f9b (HEAD -> change) change index
 5e557f1 Merge branch 'master' into change
 cf46bbb change index
@@ -269,27 +288,40 @@ cf46bbb change index
 01575e4 updated index
 652a907 change index.html
 9b7ef17 fackd ap index
+
 ```
 
 with the command `git checkout HEAD~1` you get:
 
+```
+
 2c77f9b (HEAD -> change) change index		from here,
 5e557f1 Merge branch 'master' into change	to here
 
+```
+
 but with the command `git checkout HEAD~2` you get:
+
+```
 
 2c77f9b (HEAD -> change) change index		from here, 
 5e557f1 Merge branch 'master' into change
 cf46bbb change index
 1be733a change index						to here
 
+```
+
 but with the command `git checkout HEAD~3` you get:
+
+```
 
 2c77f9b (HEAD -> change) change index		from here,
 5e557f1 Merge branch 'master' into change
 cf46bbb change index
 1be733a change index
 2e57c4a Merge branch 'change'				to here.
+
+```
 
 ## git reflog
 
@@ -299,19 +331,29 @@ see witch branches you were before (jump history.).
 
 files in branches: 
 
+```
+
 branch master:
 	index: "this is a file"
+
+```
+
+```
 
 branch bran2: 
 	index: "this is another file"
 
+```
+
 branches:
 
 ```
+
 o | -> some other commit in master
 | 0 -> commit in bran2
 |/
 o ->initial cmt (branch = master)
+
 ```
 
 to rebase the current branch with an other one branch: 
@@ -325,12 +367,14 @@ in the bran2:
 branches:
 
 ```
+
 | 0 -> commit in bran2	\
 |/			 | the bran2 synchronized with the head of the master branch.
 o -> some other commit  /
 |    in master 
 |
 o ->initial cmt (branch = master)
+
 ```
 
 now, in the master branch, 
@@ -338,17 +382,91 @@ now, in the master branch,
 `git rebase bran2`
 
 ```
+
 0 -> commit in bran2	\
 |			 | the bran2 and master are now, one.
 o -> some other commit  /
 |    in master 
 |
 o ->initial cmt (branch = master)
+
 ```
 
+## sending code to GitHub ( from the terminal )
 
+first, make a ssh-key so GitHub can know that you are traying to push your commits.
 
+```
 
+ssh-keygen -t ed25519 -C "email@email.email"
+     ^     ^     ^     ^          ^
+     |     |     |   comment      |
+     |     |     |    flag --->  comment 
+     |  create   |              (between quotes)
+     |  this ----|
+     |  type of key
+     |
+command to
+create a ssh key
 
+```
 
+after creating your key:
+
+`cat $HOME/.ssh/id_ed25519.pub`
+
+copy the key, 
+
+```
+
+Ex. output:
+
+$ cat $HOME/.ssh/id_ed25519.pub
+
+ssh-ed25519 AJHKkhkjhkjhv67587iamhot2r66x546543st87ytbiuy email@email.email
+
+```
+
+when you run the command, you would get something like the last line, lets call it Robson. Copy Robson.
+
+Now, fast:
+
+Open your browser, go to your GitHub (you need an account), go to the settings page, go to something with SSH, click on the button "New SSH key", give it any title you want, in the drop down menu select authentication key, paste Robson in the other input field (not the title one, the other one), click on "Add SSH key", get out of the settings page, go to one repo in your github (create one if you don't have any) click in the "Code" button, inside the popup, click in ssh, copy something like this: git@github.com:YOUR_USR_NAME/REPO_NAME.git.
+
+Hallelujah! the GUI part is over!
+
+Back to the terminal.
+
+clone the repo 
+
+```
+
+$ git clone git@github.com:YOUR_USR_NAME/REPO_NAME.git
+
+Cloning into 'REPO_NAME'... ***--->> IT IS TELLING YOU WHERE IT IS PUTTING THE CLONED REPO.***
+remote: Enumerating objects: ??, done.
+remote: Counting objects: ???% (??/??), done.
+remote: Compressing objects: ???% (??/??), done.
+remote: Total ?? (delta ?), reused ?? (delta ?), pack-reused ? (from ?)
+Receiving objects: ???% (??/??), ?.?? MiB | ?.?? MiB/s, done.
+Resolving deltas: ???% (?/?), done.
+
+```
+
+And you should be able to push your local commits to github with 
+
+```
+
+git push origin main
+           ^      ^
+           |    "send the commits i 
+           |    have in the main branch"
+is the name of             - You
+the connection 
+you have 
+with git.
+
+```
+
+MAY THE FORCE GIT WITH YOU!
 
