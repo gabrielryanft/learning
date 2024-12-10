@@ -71,14 +71,14 @@ HEAD = current branch (can be seen in .git/HEAD, i.e. show the name of current b
 ```
 
 <<<<<<< HEAD 
-<tbody>			\
+<tbody>	            \
 	<tr>1</tr>   |      
 	<tr>2</tr>    \  file in the 
 	<tr>3</tr>    /   current branch   
 	<tr>4</tr>   |      
-</tbody>		/ 
+</tbody>            / 
 =======         
-<ul>				\
+<ul>			\
 	<li>this</li>    |
 	<li>p</li>        > file in the
 	<li>p</li>       |   other branch
@@ -90,7 +90,7 @@ HEAD = current branch (can be seen in .git/HEAD, i.e. show the name of current b
 
 ### delete branch 
 
-`git branch -d branch_name` (-d stands for delete.)
+`$ git branch -d branch_name` (-d stands for delete.)
 
 ## git diff
 
@@ -103,7 +103,7 @@ or `git diff branc1 branch2` to compare 2 branches (not necessarily the one you 
 
 \* if you are in an old version of git use:
 
-`git diff branc1..branch2`
+`$ git diff branc1..branch2`
 
 Ex. output: ( inside parentheses are my observations )
 
@@ -143,7 +143,7 @@ index 37fb774..ffdaed4 100644
 
 ### diffing staged and not staged files (past and present of current branch)
 
-`git diff --staged`
+`$ git diff --staged`
 
 Ex. output: ( inside parentheses are my observations )
 
@@ -172,11 +172,11 @@ index dcd00ea..ffdaed4 100644
 
 ### diff commits
 
-`git diff commit_id1 commit_id2`
+`$ git diff commit_id1 commit_id2`
 
 Ex.:
 
-´$ git log --oneline`
+`$ git log --oneline`
 
 output:
 
@@ -201,11 +201,11 @@ c85694e update .gitignore
 
 ```
 
-`git diff cf46bbb 9b7ef17` 
+`$ git diff cf46bbb 9b7ef17` 
 
 \* if you are in a old version of git, use:
 
-`git diff cf46bbb..9b7ef17`
+`$ git diff cf46bbb..9b7ef17`
 
 output:
 
@@ -240,7 +240,7 @@ index 37fb774..7e28d11 100644
 
 when you stash your changes, they are taken out from the files.
 
-`git stash`
+`$ git stash`
 
 \* this command stashes the changes in the current branch.
 
@@ -252,17 +252,17 @@ before stashing anything, run `git stash list`, to see if some thing is already 
 
 stashed changes can be pop(d? i don't know how to write), unstashed, with:
 
-`git stash pop`
+`$ git stash pop`
 
 \* stashes change branch with you, so, pay atention with what you are pop(ing?). unstashing in the wrong place can cause the same "problem" as a merge conflict.
 
 ### apply specific stash
 
-`git stash apply stash@{n}`
+`$ git stash apply stash@{n}`
 
 ## make experiments on past commits without affecting the current state of branch
 
-`git checkout commit_id`
+`$ git checkout commit_id`
 
 this creates a new banch separated from the parent branch.
 
@@ -270,11 +270,11 @@ to keep something you do in the "test branch" make a branch from inside the copy
 
 or use head and the number of commits you want to go back.
 
-`git checkout HEAD~2`
+`$ git checkout HEAD~2`
 
 Ex.:
 
-`git log --oneline`
+`$ git log --oneline`
 
 output: 
 
@@ -329,19 +329,20 @@ see witch branches you were before (jump history.).
 
 ## git rebase
 
-files in branches: 
+files and commits in branches: 
 
 ```
 
 branch master:
-	index: "this is a file"
+	init commit: index.txt: "this is a file"
+	come other commit: index.txt: "this is a file, not a unicorn"
 
 ```
 
 ```
 
 branch bran2: 
-	index: "this is another file"
+	index.txt: "this is another file"
 
 ```
 
@@ -362,7 +363,7 @@ do not rebase the master first. start with the other one.
 
 in the bran2:
 
-`git rebase master`
+`$ git rebase master`
 
 branches:
 
@@ -377,9 +378,11 @@ o ->initial cmt (branch = master)
 
 ```
 
+it will give a merge conflict. solve it.
+
 now, in the master branch, 
 
-`git rebase bran2`
+`$ git rebase bran2`
 
 ```
 
@@ -413,7 +416,7 @@ create a ssh key
 
 after creating your key:
 
-`cat $HOME/.ssh/id_ed25519.pub`
+`$ cat $HOME/.ssh/id_ed25519.pub`
 
 copy the key, 
 
@@ -443,7 +446,7 @@ clone the repo
 
 $ git clone git@github.com:YOUR_USR_NAME/REPO_NAME.git
 
-Cloning into 'REPO_NAME'... ***--->> IT IS TELLING YOU WHERE IT IS PUTTING THE CLONED REPO.***
+Cloning into 'REPO_NAME'... --->> IT IS TELLING YOU WHERE IT IS PUTTING THE CLONED REPO.
 remote: Enumerating objects: ??, done.
 remote: Counting objects: ???% (??/??), done.
 remote: Compressing objects: ???% (??/??), done.
@@ -457,11 +460,11 @@ And you should be able to push your local commits to github with
 
 ```
 
-git push origin main
-           ^      ^
-           |    "send the commits i 
-           |    have in the main branch"
-is the name of             - You
+$ git push origin main
+            ^      ^
+            |    "send the commits i 
+            |    have in the main branch"
+is the name of  
 the connection 
 you have 
 with git.
