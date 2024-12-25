@@ -1,9 +1,9 @@
-exec: doth
+exec: binary
 	echo -e ""
-	./doth
+	./binary
 
-doth: o.c
-	cc -O -o doth o.c
+binary: o.c
+	cc -O -o binary o.c
 
 clean:
-	rm doth
+	rm binary
