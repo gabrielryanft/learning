@@ -8,6 +8,7 @@ jobs:
       - run: echo oi > "${{ github.workspace }}/file3.txt"
       - run: echo oi > "${{ github.workspace }}/file4.txt"
       - run: for i in ${{ github.workspace }}; do [ ! -d $i ] && cat $i ; [ -d $i ] && echo dir $i ; echo ; done
+      - run: for i in $(seq 5); ls && echo && cd ..; done
       - run: ls ${{ github.workspace }}
       - run: echo this is new
       - run: cd ${{ github.workspace }} && cd .. && ls . && pwd
