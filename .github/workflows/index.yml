@@ -1,0 +1,9 @@
+name: Run organize script
+on: [push]
+jobs:
+  build:
+    name: Post welcome comment
+    runs-on: ubuntu-latest
+    steps:
+      - run: .github/organize_learning.sh
+        shell: bash
