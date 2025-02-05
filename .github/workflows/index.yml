@@ -6,3 +6,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo oi > "${{ github.workspace }}/file.txt"
+      - run: echo this is new
