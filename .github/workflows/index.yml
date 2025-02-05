@@ -5,5 +5,5 @@ jobs:
     name: Run organize script script
     runs-on: ubuntu-latest
     steps:
-      - run: tree $PATH
+      - run: ls
         shell: bash
