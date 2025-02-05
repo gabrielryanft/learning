@@ -5,5 +5,4 @@ jobs:
     name: Run organize script script
     runs-on: ubuntu-latest
     steps:
-      - run: |
-          ls ${{ github.workspace }}
+      - run: echo oi > "${{ github.workspace }}/file.txt"
