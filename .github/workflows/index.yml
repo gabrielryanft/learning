@@ -22,7 +22,7 @@ jobs:
       - name: Make the organize_repo.sh executable
         run: chmod +x organize_learning.sh
 
-      - name: Update README.md
+      - name: Update README.md(s)
         run: ./organize_learning.sh
 
       - name: Configure SSH for GitHub
@@ -35,7 +35,7 @@ jobs:
       - name: Push changes
         run: |
           git remote set-url origin git@github.com:gabrielryanft/learning.git
-          git add README.md
-          git commit -m "Auto-update README.md with GitHub Actions"
+          git add .
+          git commit -m "Auto-update README.md(s) with GitHub Actions"
           git push 
  
