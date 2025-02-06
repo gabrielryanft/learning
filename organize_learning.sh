@@ -30,6 +30,7 @@ organize () {
 		str="${str::$num}"
 		printf "<a href='$str' target='_self' rel='prev'>..</a><br/>\n" >> "$2/README.md"
 	fi
+	$((pos_in_f_tree++))
 	while read -r name
 	do
 		if [ -d "$2/$name" ]; then
@@ -39,7 +40,6 @@ organize () {
 			printf "<a href='$1/$name' target='_blank' rel='next'>$name</a><br/>\n" >> "$2/README.md"
 		fi
 	done < "$2/exists.txt"
-	$((pos_in_f_tree++))
 }
 organize "https://gabrielryanft.github.io/learning" "$(pwd)"
 
