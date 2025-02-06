@@ -34,8 +34,10 @@ jobs:
 
       - name: Push changes
         run: |
-          git remote set-url origin git@github.com:gabrielryanft/learning.git
-          git add .
-          git commit -m "Auto-update README.md(s) with GitHub Actions"
-          git push 
+          if [ -n "$(git status --porcelain)" ]; then 
+            git remote set-url origin git@github.com:gabrielryanft/learning.git
+            git add .
+            git commit -m "Auto-update README.md(s) with GitHub Actions"
+            git push 
+          fi
  
