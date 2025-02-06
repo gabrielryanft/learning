@@ -9,4 +9,5 @@ jobs:
       # to interact with the repository files
 
       - run: cd ${{ github.workspace }} && .github/organize_learning.sh
+      - run: cat README.md
 
