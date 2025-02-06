@@ -6,7 +6,10 @@ jobs:
     steps:
       - name: Check out repository code
         uses: actions/checkout@v4
+      # to interact with the repository files
 
+      - run: ls 
+      - run: cd && ls 
       - run: ls ${{ github.workspace }}
 
       - run: cd ${{ github.workspace }} && echo text > file.txt
