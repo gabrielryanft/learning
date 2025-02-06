@@ -5,7 +5,9 @@
 
 # cleaning
 
-echo something > file.txt
+echo something
+pwd
+ls
 # clean () {
 # 	str="$(ls $1)"
 # 	while read name

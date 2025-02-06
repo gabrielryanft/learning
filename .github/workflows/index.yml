@@ -1,5 +1,4 @@
-name: GitHub Actions Demo
-run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+name: Run organize
 on: [push]
 jobs:
   Explore-GitHub-Actions:
@@ -10,7 +9,8 @@ jobs:
 
       - run: ls ${{ github.workspace }}
 
-      - run: echo text > file.txt
+      - run: cd ${{ github.workspace }} && echo text > file.txt
       
       - run: .github/organize_learning.sh
+      - run: cd ${{ github.workspace }} && .github/organize_learning.sh
 
