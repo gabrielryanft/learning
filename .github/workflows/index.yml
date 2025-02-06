@@ -20,10 +20,10 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
       - name: Make the organize_repo.sh executable
-        run: chmod +x organize_repo.sh
+        run: chmod +x organize_learning.sh
 
       - name: Update README.md
-        run: ./organize_repo.sh
+        run: ./organize_learning.sh
 
       - name: Commit and Push Changes
         run: |
