@@ -10,5 +10,7 @@ jobs:
 
       - run: ls ${{ github.workspace }}
 
+      - run: echo text > file.txt
+      
       - run: .github/organize_learning.sh
 
