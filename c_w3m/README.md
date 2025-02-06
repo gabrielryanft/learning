@@ -1,4 +1,5 @@
 # c_w3m 
+<a href='https://gabrielryanft.github.io/learning' target='_self' rel='prev'>..</a><br/>
 <a href='https://gabrielryanft.github.io/learning/c_w3m/area_rectangle.c' target='_blank' rel='next'>area_rectangle.c</a><br/>
 <a href='https://gabrielryanft.github.io/learning/c_w3m/array.c' target='_blank' rel='next'>array.c</a><br/>
 <a href='https://gabrielryanft.github.io/learning/c_w3m/boolean.c' target='_blank' rel='next'>boolean.c</a><br/>
@@ -12,6 +13,8 @@
 <a href='https://gabrielryanft.github.io/learning/c_w3m/get_user_input.c' target='_blank' rel='next'>get_user_input.c</a><br/>
 <a href='https://gabrielryanft.github.io/learning/c_w3m/ifs.c' target='_blank' rel='next'>ifs.c</a><br/>
 <a href='https://gabrielryanft.github.io/learning/c_w3m/makefile' target='_blank' rel='next'>makefile</a><br/>
+<a href='https://gabrielryanft.github.io/learning/c_w3m/mem_addr.c' target='_blank' rel='next'>mem_addr.c</a><br/>
+<a href='https://gabrielryanft.github.io/learning/c_w3m/pointers.c' target='_blank' rel='next'>pointers.c</a><br/>
 <a href='https://gabrielryanft.github.io/learning/c_w3m/precision_calculation_float_double.c' target='_blank' rel='next'>precision_calculation_float_double.c</a><br/>
 <a href='https://gabrielryanft.github.io/learning/c_w3m/rounding.123f.c' target='_blank' rel='next'>rounding.123f.c</a><br/>
 <a href='https://gabrielryanft.github.io/learning/c_w3m/some_data_types.c' target='_blank' rel='next'>some_data_types.c</a><br/>

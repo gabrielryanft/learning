@@ -1,10 +1,11 @@
 # aulas-cursoemvideo 
+<a href='https://gabrielryanft.github.io/learning/cursoemvideo/javascript' target='_self' rel='prev'>..</a><br/>
 <a href='https://gabrielryanft.github.io/learning/cursoemvideo/javascript/aulas-cursoemvideo/3popups.html' target='_blank' rel='next'>3popups.html</a><br/>
 <a href='https://gabrielryanft.github.io/learning/cursoemvideo/javascript/aulas-cursoemvideo/arays.html' target='_blank' rel='next'>arays.html</a><br/>
 <a href='https://gabrielryanft.github.io/learning/cursoemvideo/javascript/aulas-cursoemvideo/caixa.html' target='_blank' rel='next'>caixa.html</a><br/>
 <a href='https://gabrielryanft.github.io/learning/cursoemvideo/javascript/aulas-cursoemvideo/close.html' target='_blank' rel='next'>close.html</a><br/>
 <a href='https://gabrielryanft.github.io/learning/cursoemvideo/javascript/aulas-cursoemvideo/closedoispontozero.html' target='_blank' rel='next'>closedoispontozero.html</a><br/>
-<a href='https://gabrielryanft.github.io/learning/cursoemvideo/javascript/aulas-cursoemvideo/coisasjs/' target='_blank' rel='next'>coisasjs</a><br/>
+<a href='https://gabrielryanft.github.io/learning/cursoemvideo/javascript/aulas-cursoemvideo/coisasjs/' target='_self' rel='next'>coisasjs</a><br/>
 <a href='https://gabrielryanft.github.io/learning/cursoemvideo/javascript/aulas-cursoemvideo/diaswitch.html' target='_blank' rel='next'>diaswitch.html</a><br/>
 <a href='https://gabrielryanft.github.io/learning/cursoemvideo/javascript/aulas-cursoemvideo/dom.html' target='_blank' rel='next'>dom.html</a><br/>
 <a href='https://gabrielryanft.github.io/learning/cursoemvideo/javascript/aulas-cursoemvideo/foncoes.html' target='_blank' rel='next'>foncoes.html</a><br/>

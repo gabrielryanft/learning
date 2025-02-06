@@ -1,5 +1,6 @@
 # video 
-<a href='https://gabrielryanft.github.io/learning/cursoemvideo/htmlecss/html/video/ex/' target='_blank' rel='next'>ex</a><br/>
+<a href='https://gabrielryanft.github.io/learning/cursoemvideo/htmlecss/html' target='_self' rel='prev'>..</a><br/>
+<a href='https://gabrielryanft.github.io/learning/cursoemvideo/htmlecss/html/video/ex/' target='_self' rel='next'>ex</a><br/>
 <a href='https://gabrielryanft.github.io/learning/cursoemvideo/htmlecss/html/video/format.jpg' target='_blank' rel='next'>format.jpg</a><br/>
 <a href='https://gabrielryanft.github.io/learning/cursoemvideo/htmlecss/html/video/gunabara.jpg' target='_blank' rel='next'>gunabara.jpg</a><br/>
 <a href='https://gabrielryanft.github.io/learning/cursoemvideo/htmlecss/html/video/imagem.jpg' target='_blank' rel='next'>imagem.jpg</a><br/>

@@ -1,4 +1,5 @@
 # imgs 
+<a href='https://gabrielryanft.github.io/learning/cursoemvideo/htmlecss/css/medque' target='_self' rel='prev'>..</a><br/>
 <a href='https://gabrielryanft.github.io/learning/cursoemvideo/htmlecss/css/medque/imgs/icon-pc.png' target='_blank' rel='next'>icon-pc.png</a><br/>
 <a href='https://gabrielryanft.github.io/learning/cursoemvideo/htmlecss/css/medque/imgs/icon-phone.png' target='_blank' rel='next'>icon-phone.png</a><br/>
 <a href='https://gabrielryanft.github.io/learning/cursoemvideo/htmlecss/css/medque/imgs/icon-print.png' target='_blank' rel='next'>icon-print.png</a><br/>
