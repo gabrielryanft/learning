@@ -1,26 +1,65 @@
-name: Run organize
+name: Update README
+
 on:
   push:
-    branches: [ main ]
-jobs:
-  Explore-GitHub-Actions:
-    runs-on: ubuntu-latest
-    env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    steps:
-      - name: Check out repository code
-        uses: actions/checkout@v4
-      # to interact with the repository files
+    branches:
+      - main
+  workflow_dispatch:
 
-      - run: cd ${{ github.workspace }} && .github/organize_learning.sh
-      - run: cat README.md
-      - run: |
-          git config --local user.name  ${{ github.actor }}        
-          git config --local user.email "${{ github.actor }}@users.noreply.github.com"
-          git add .
-          git commit -m "Update README.md w/ gh actions"
-          git remote set-url --push origin https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
-          git push
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout the repository
+        uses: actions/checkout@v3
+
+      - name: Set up Git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Make the organize_repo.sh executable
+        run: chmod +x organize_repo.sh
+
+      - name: Update README.md
+        run: ./organize_repo.sh
+
+      - name: Commit and Push Changes
+        run: |
+          if [[ -n "$(git status --porcelain)" ]]; then
+            git add README.md
+            git commit -m "Auto-update README.md with GitHub Actions"
+            git push
+          else
+            echo "No changes detected in README.md."
+          fi
+ 
+ 
+ 
+# name: Run organize
+# on:
+#   push:
+#     branches: [ main ]
+# jobs:
+#   Explore-GitHub-Actions:
+#     runs-on: ubuntu-latest
+#     env:
+#         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#     steps:
+#       - name: Check out repository code
+#         uses: actions/checkout@v4
+#       # to interact with the repository files
+# 
+#       - run: cd ${{ github.workspace }} && .github/organize_learning.sh
+#       - run: cat README.md
+#       - run: |
+#           git config --local user.name  ${{ github.actor }}        
+#           git config --local user.email "${{ github.actor }}@users.noreply.github.com"
+#           git add .
+#           git commit -m "Update README.md w/ gh actions"
+#           git remote set-url --push origin https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+#           git push
 
 
 ## This is a basic workflow to help you get started with Actions
