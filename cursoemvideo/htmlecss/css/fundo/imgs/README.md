@@ -1,4 +1,5 @@
 # imgs 
+<a href='https://gabrielryanft.github.io/learning/cursoemvideo/htmlecss/css/fundo' target='_self' rel='prev'>..</a><br/>
 <a href='https://gabrielryanft.github.io/learning/cursoemvideo/htmlecss/css/fundo/imgs/pattern001.png' target='_blank' rel='next'>pattern001.png</a><br/>
 <a href='https://gabrielryanft.github.io/learning/cursoemvideo/htmlecss/css/fundo/imgs/pattern002.png' target='_blank' rel='next'>pattern002.png</a><br/>
 <a href='https://gabrielryanft.github.io/learning/cursoemvideo/htmlecss/css/fundo/imgs/pattern003.png' target='_blank' rel='next'>pattern003.png</a><br/>

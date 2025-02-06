@@ -1,4 +1,5 @@
 # tabelas 
+<a href='https://gabrielryanft.github.io/learning/cursoemvideo/htmlecss/css' target='_self' rel='prev'>..</a><br/>
 <a href='https://gabrielryanft.github.io/learning/cursoemvideo/htmlecss/css/tabelas/tabela2alinhamento.html' target='_blank' rel='next'>tabela2alinhamento.html</a><br/>
 <a href='https://gabrielryanft.github.io/learning/cursoemvideo/htmlecss/css/tabelas/tabela6responsivaeixox.html' target='_blank' rel='next'>tabela6responsivaeixox.html</a><br/>
 <a href='https://gabrielryanft.github.io/learning/cursoemvideo/htmlecss/css/tabelas/tabelaex.html' target='_blank' rel='next'>tabelaex.html</a><br/>

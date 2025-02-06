@@ -1,4 +1,5 @@
 # aula11 
+<a href='https://gabrielryanft.github.io/learning/cursoemvideo/python/exerciciospython' target='_self' rel='prev'>..</a><br/>
 <a href='https://gabrielryanft.github.io/learning/cursoemvideo/python/exerciciospython/aula11/ex036-valorcasa.py' target='_blank' rel='next'>ex036-valorcasa.py</a><br/>
 <a href='https://gabrielryanft.github.io/learning/cursoemvideo/python/exerciciospython/aula11/ex037-dacimalbinariooctal.py' target='_blank' rel='next'>ex037-dacimalbinariooctal.py</a><br/>
 <a href='https://gabrielryanft.github.io/learning/cursoemvideo/python/exerciciospython/aula11/ex038-menormaiorouigual.py' target='_blank' rel='next'>ex038-menormaiorouigual.py</a><br/>

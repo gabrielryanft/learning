@@ -1,4 +1,5 @@
 # aula13 
+<a href='https://gabrielryanft.github.io/learning/cursoemvideo/python/exerciciospython' target='_self' rel='prev'>..</a><br/>
 <a href='https://gabrielryanft.github.io/learning/cursoemvideo/python/exerciciospython/aula13/ex046-fogos.py' target='_blank' rel='next'>ex046-fogos.py</a><br/>
 <a href='https://gabrielryanft.github.io/learning/cursoemvideo/python/exerciciospython/aula13/ex047-numpares1a50.py' target='_blank' rel='next'>ex047-numpares1a50.py</a><br/>
 <a href='https://gabrielryanft.github.io/learning/cursoemvideo/python/exerciciospython/aula13/ex048-imparmultiplodetressoma.py' target='_blank' rel='next'>ex048-imparmultiplodetressoma.py</a><br/>

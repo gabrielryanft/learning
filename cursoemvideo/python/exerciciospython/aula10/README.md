@@ -1,4 +1,5 @@
 # aula10 
+<a href='https://gabrielryanft.github.io/learning/cursoemvideo/python/exerciciospython' target='_self' rel='prev'>..</a><br/>
 <a href='https://gabrielryanft.github.io/learning/cursoemvideo/python/exerciciospython/aula10/ex028-escolhaumnumcomsleepetime.py' target='_blank' rel='next'>ex028-escolhaumnumcomsleepetime.py</a><br/>
 <a href='https://gabrielryanft.github.io/learning/cursoemvideo/python/exerciciospython/aula10/ex029-velocidade.py' target='_blank' rel='next'>ex029-velocidade.py</a><br/>
 <a href='https://gabrielryanft.github.io/learning/cursoemvideo/python/exerciciospython/aula10/ex030-parouimpar.py' target='_blank' rel='next'>ex030-parouimpar.py</a><br/>

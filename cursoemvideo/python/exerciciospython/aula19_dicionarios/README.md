@@ -1,4 +1,5 @@
 # aula19_dicionarios 
+<a href='https://gabrielryanft.github.io/learning/cursoemvideo/python/exerciciospython' target='_self' rel='prev'>..</a><br/>
 <a href='https://gabrielryanft.github.io/learning/cursoemvideo/python/exerciciospython/aula19_dicionarios/ex090-nomealunomediapasoureprovou.py' target='_blank' rel='next'>ex090-nomealunomediapasoureprovou.py</a><br/>
 <a href='https://gabrielryanft.github.io/learning/cursoemvideo/python/exerciciospython/aula19_dicionarios/ex091-dados.py' target='_blank' rel='next'>ex091-dados.py</a><br/>
 <a href='https://gabrielryanft.github.io/learning/cursoemvideo/python/exerciciospython/aula19_dicionarios/ex092-workrecordbook.py' target='_blank' rel='next'>ex092-workrecordbook.py</a><br/>

@@ -1,4 +1,5 @@
 # img 
+<a href='https://gabrielryanft.github.io/learning/cursoemvideo/htmlecss/html/ex005' target='_self' rel='prev'>..</a><br/>
 <a href='https://gabrielryanft.github.io/learning/cursoemvideo/htmlecss/html/ex005/img/Imagem1.png' target='_blank' rel='next'>Imagem1.png</a><br/>
 <a href='https://gabrielryanft.github.io/learning/cursoemvideo/htmlecss/html/ex005/img/Imagem11.png' target='_blank' rel='next'>Imagem11.png</a><br/>
 <a href='https://gabrielryanft.github.io/learning/cursoemvideo/htmlecss/html/ex005/img/YNwTPJ0nQUR-cutout.png' target='_blank' rel='next'>YNwTPJ0nQUR-cutout.png</a><br/>

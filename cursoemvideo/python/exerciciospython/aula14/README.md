@@ -1,4 +1,5 @@
 # aula14 
+<a href='https://gabrielryanft.github.io/learning/cursoemvideo/python/exerciciospython' target='_self' rel='prev'>..</a><br/>
 <a href='https://gabrielryanft.github.io/learning/cursoemvideo/python/exerciciospython/aula14/ex057-reserradarepete.py' target='_blank' rel='next'>ex057-reserradarepete.py</a><br/>
 <a href='https://gabrielryanft.github.io/learning/cursoemvideo/python/exerciciospython/aula14/ex058-adivinheonum.py' target='_blank' rel='next'>ex058-adivinheonum.py</a><br/>
 <a href='https://gabrielryanft.github.io/learning/cursoemvideo/python/exerciciospython/aula14/ex059-somamaior.py' target='_blank' rel='next'>ex059-somamaior.py</a><br/>
