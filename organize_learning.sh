@@ -17,20 +17,29 @@ clean () {
 	done <<< "$str"
 }
 
+pos_in_f_tree=0
 # Making
 organize () {
 	ls --ignore={"README.md","LICENSE","organize_learning.sh"} "$2" > "$2/exists.txt"
 	sed -i '/exists.txt/d' "$2/exists.txt"
 	printf "# $(basename $2) \n" > "$2/README.md"
+	if [ $pos_in_f_tree -gt 0 ]; then 
+		str="$1"
+		num=$(printf "$1" | sed 's/^.*\(\/..*\)$/\1/' | wc -c)
+		num=$((num * -1))
+		str="${str::$num}"
+		printf "<a href='$str' target='_self' rel='prev'>..</a><br/>\n" >> "$2/README.md"
+	fi
 	while read -r name
 	do
-		if [ "$(file -b "$2/$name")" = "directory" ]; then
-			printf "<a href='$1/$name/' target='_blank' rel='next'>$name</a><br/>\n" >> "$2/README.md"
+		if [ -d "$2/$name" ]; then
+			printf "<a href='$1/$name/' target='_self' rel='next'>$name</a><br/>\n" >> "$2/README.md"
 			organize "$1/$name" "$2/$name"
 		else
 			printf "<a href='$1/$name' target='_blank' rel='next'>$name</a><br/>\n" >> "$2/README.md"
 		fi
 	done < "$2/exists.txt"
+	$((pos_in_f_tree++))
 }
 organize "https://gabrielryanft.github.io/learning" "$(pwd)"
 
