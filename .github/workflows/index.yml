@@ -10,5 +10,6 @@ jobs:
 
       - run: touch file.txt
       - run: echo hi > file2.txt
+      - rin: cat file2.txt
       # - run: cd ${{ github.workspace }} && .github/organize_learning.sh
 
