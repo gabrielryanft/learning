@@ -12,8 +12,5 @@ jobs:
       - run: cd && ls 
       - run: ls ${{ github.workspace }}
 
-      - run: cd ${{ github.workspace }} && echo text > file.txt
-      
-      - run: .github/organize_learning.sh
-      - run: cd ${{ github.workspace }} && .github/organize_learning.sh
+      #- run: cd ${{ github.workspace }} && .github/organize_learning.sh
 
