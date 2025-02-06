@@ -8,8 +8,5 @@ jobs:
         uses: actions/checkout@v4
       # to interact with the repository files
 
-      - run: touch file.txt
-      - run: echo hi > file2.txt
-      - run: cat file2.txt
-      # - run: cd ${{ github.workspace }} && .github/organize_learning.sh
+      - run: cd ${{ github.workspace }} && .github/organize_learning.sh
 
