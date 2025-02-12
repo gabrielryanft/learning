@@ -5,4 +5,3 @@
 <a href='https://gabrielryanft.github.io/learning/javascript/' target='_self' rel='next'>javascript</a><br/>
 <a href='https://gabrielryanft.github.io/learning/llm/' target='_self' rel='next'>llm</a><br/>
 <a href='https://gabrielryanft.github.io/learning/python/' target='_self' rel='next'>python</a><br/>
-<a href='https://gabrielryanft.github.io/learning/test' target='_blank' rel='next'>test</a><br/>
