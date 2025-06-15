@@ -13,8 +13,8 @@ int main (){
 	//so:
 
 	float div_2 = (float) five / two;
-//					^
-//				this is called an !!!!explicit conversion.!!!!!!
+//			^
+//		this is called an !!!!explicit conversion.!!!!!!
 
 	printf("%f\n", div_2); // 2.500000
 	printf("%.1f\n", div_2); // 2.500000
