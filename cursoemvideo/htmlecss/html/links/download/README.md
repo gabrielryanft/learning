@@ -1,4 +1,4 @@
 # download 
 <a href='https://gabrielryanft.github.io/learning/cursoemvideo/htmlecss/html/links' target='_self' rel='prev'>..</a><br/>
-<a href='https://gabrielryanft.github.io/learning/cursoemvideo/htmlecss/html/links/download/GrasshopperFundamentosdecodifica√ß√£oCertificate.pdf' target='_blank' rel='next'>GrasshopperFundamentosdecodifica√ß√£oCertificate.pdf</a><br/>
-<a href='https://gabrielryanft.github.io/learning/cursoemvideo/htmlecss/html/links/download/GrasshopperFundamentosdecodifica√ß√£oCertificate.zip' target='_blank' rel='next'>GrasshopperFundamentosdecodifica√ß√£oCertificate.zip</a><br/>
+<a href='https://gabrielryanft.github.io/learning/cursoemvideo/htmlecss/html/links/download/GrasshopperFundamentosdecodificaá∆oCertificate.pdf' target='_blank' rel='next'>GrasshopperFundamentosdecodificaá∆oCertificate.pdf</a><br/>
+<a href='https://gabrielryanft.github.io/learning/cursoemvideo/htmlecss/html/links/download/GrasshopperFundamentosdecodificaá∆oCertificate.zip' target='_blank' rel='next'>GrasshopperFundamentosdecodificaá∆oCertificate.zip</a><br/>
