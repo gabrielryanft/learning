@@ -20,7 +20,7 @@ ex:
 
 google has a very cool one. i tried a lot of websites and google was the only one that had one. W google.
 https://www.google.com/humans.txt
-AND FIVERR! it has a sick one too:
+AND FIVERR! it has a sick one too, it sais they used vim do to the site:
 https://www.fiverr.com/humans.txt
 
 # ex.com/**sitemap.xml**
